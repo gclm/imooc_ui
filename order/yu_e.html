@@ -1,0 +1,274 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>我的余额_慕课网</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit">
+
+    <link rel="stylesheet" href="../static/css/order/yu_e.css">
+
+    <script type="text/javascript">
+        var OP_CONFIG = {
+            "module": "balance",
+            "page": "index",
+            "userout": 0,
+            "userInfo": {
+                "uid": 7613182
+            }
+        };
+        OP_CONFIG.isLogin = 1;
+        var _msg_unread = 0;
+        var _not_unread = 0;
+        var _cart_num = 0;
+        var requirejsTimestamp = "v=201903151540";
+    </script>
+</head>
+
+<body>
+
+    <div id="header">
+        <div class="page-container new-header" id="nav">
+            <ul class="nav-item">
+                <li><a href="//www.imooc.com" target="_self" class="imooc">慕课网首页</a></li>
+                <li><a href="//www.imooc.com/course/list" target="_self">免费课程</a></li>
+                <li><a href="//coding.imooc.com" target="_self">实战课程</a></li>
+                <li><a href="//class.imooc.com" target="_self">就业班</a></li>
+                <li class="search" id="common-nav-search">
+                    <a href="javascript:void(0);">
+                        <i class="imv2-search"></i>
+                    </a>
+                </li>
+                <li class="input-search hide" id="common-input-search">
+                    <div class="input-box">
+                        <input type="text" class="nav-search-input" autocomplete="off">
+                        <a href="javascript:void(0);" class="nav-searchBtn js-nav-searchBtn">
+                            <i class="imv2-search"></i>
+                        </a>
+                    </div>
+                    <div class="nav-search-box hide">
+                        <div class="hot">
+                            <h2>热搜</h2>
+                            <div class="hot-box"></div>
+                        </div>
+                        <div class="history hide">
+                            <h2>最近搜索<a href="javascript:void(0);" class="history-clear js-clear-history">清空</a></h2>
+                            <div class="history-box"></div>
+                        </div>
+                    </div>
+                    <div class="nav-correlate-box hide">
+                        <div class="correlate"></div>
+                    </div>
+                </li>
+            </ul>
+            <div class="header-right clearfix">
+                <div class="app-download" id="js-app-load">
+                    <a href="//www.imooc.com/mobile/app" target="_blank">下载APP</a>
+                    <div class="app-load-box clearfix js-load-box">
+                        <div class="browser-load-box">
+                            <h4>慕课网浏览器 - PC客户端</h4>
+                            <a class="app-load-btn" href="//www.imooc.com/mobile/app" target="_blank"><i
+                                    class="imv2-windows"></i>Windows版</a>
+                            <span class="browser-load-mac">Mac版开发中，敬请期待…</span>
+                        </div>
+                        <div class="mobile-load-box">
+                            <h4>慕课网APP - 随时随地学编程</h4>
+                            <img src="//www.imooc.com/static/img/common/appload.png" class="l">
+                            <div class="r">
+                                <a class="app-load-btn"
+                                    href="https://itunes.apple.com/cn/app/mu-ke-wang/id722179140?mt=8"
+                                    target="_blank"><i class="icon-apple"></i>App Store下载</a>
+                                <a class="app-load-btn" href="//www.imooc.com/mobile/appdown" target="_blank"><i
+                                        class="icon-android"></i>Android下载</a>
+                                <p>扫描下载慕课网APP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-cart" id="shop-cart">
+                    <a href="//order.imooc.com/pay/cart" class="shop-cart-icon" target="_blank">
+                        <span class="imv2-cart js-endcart"></span><span>购物车</span><span
+                            class="shopping_icon js-cart-num" data-ordernum="0" data-cartnum="0" data-prevnum="0"
+                            style="display: none">0</span>
+                    </a>
+                    <div class="my-cart" id="js-my-cart"></div>
+                </div>
+                <div id="login-area">
+                    <ul class="clearfix logined">
+                        <li class="remind_warp">
+                            <i class="msg_remind"></i>
+                            <a target="_blank" href="//www.imooc.com/u/7613182/notices">
+                                <i class="imv2-notifications"></i>
+                            </a>
+                        </li>
+                        <li class="user-card-box" id="header-user-card">
+                            <a id="header-avator" class="user-card-item js-header-avator" action-type="my_menu"
+                                href="//www.imooc.com/u/index" target="_self">
+                                <img width="40" height="40">
+                                <i class="myspace_remind" style="display: none;"></i>
+                                <span style="display: none;">动态提醒</span>
+                            </a>
+                            <div class="g-user-card"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="body-main">
+
+
+
+        <div class="order-main clearfix">
+
+
+            <div class="slider l">
+                <h1>订单中心</h1>
+                <ul class="nav-menu">
+                    <a href="/myorder">
+                        <li class="clearfix "><a href="myoder.html" />
+                            <p class="nav-name l">我的订单</p>
+                            <span class="imv2-arrow1_r r"></span>
+                        </li>
+                    </a>
+                    <a href="/balance">
+                        <li class="clearfix active"><a href="yu_e.html" />
+                            <p class="nav-name l">我的余额</p>
+                            <span class="imv2-arrow1_r r"></span>
+                        </li>
+                    </a>
+                    <a href="/ma">
+                        <li class="clearfix ">
+                            <p class="nav-name l">电子兑换码</p>
+                            <span class="imv2-arrow1_r r"></span>
+                        </li>
+                    </a>
+                    <a href="/coupon">
+                        <li class="clearfix ">
+                            <p class="nav-name l">我的优惠券
+                            </p>
+                            <span class="imv2-arrow1_r r"></span>
+                        </li>
+                    </a>
+                    <a href="/consult">
+                        <li class="clearfix ">
+                            <p class="nav-name l">课程咨询</p>
+                            <span class="imv2-arrow1_r r"></span>
+                        </li>
+                    </a>
+                    <a href="/receipt">
+                        <li class="clearfix ">
+                            <p class="nav-name l">发票管理</p>
+                            <span class="imv2-arrow1_r r"></span>
+
+                        </li>
+                    </a>
+                    <a href="/bill">
+                        <li class="clearfix ">
+                            <p class="nav-name l">消费记录</p>
+                            <span class="imv2-arrow1_r r"></span>
+                        </li>
+                    </a>
+                    <a href="/pay/sharegoods">
+                        <li class="clearfix ">
+                            <p class="nav-name l">分享赚学费</p>
+                            <span class="imv2-arrow1_r r"></span>
+                        </li>
+                    </a>
+                </ul>
+            </div><!-- .slider end -->
+
+
+            <div class="right-container l">
+
+                <div class="right-title">
+                    <h2>我的余额</h2>
+                </div>
+                <div class="balance-container">
+                    <div class="title-box">
+                        <div>
+                            <p class="title">当前余额</p>
+                            <button class="recharge-btn js-recharge-btn">立即充值</button>
+                        </div>
+                        <div>
+                            <p class="charge">￥0.00</p>
+                            <p class="charge-tip">充值余额不可提现，仅限用于本平台课程消费</p>
+                        </div>
+                    </div>
+                    <div class="noData">
+                        <span class="imv2-error_c"></span>
+                        <p>目前暂无任何收支记录</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="footer">
+        <div class="waper">
+            <div class="footerwaper clearfix">
+                <div class="followus r">
+                    <a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+                        <div class="flw-weixin-box"></div>
+                    </a>
+                    <a class="followus-weibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+                    <a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank"
+                        title="QQ空间"></a>
+                </div>
+                <div class="footer_intro l">
+                    <div class="footer_link">
+                        <ul>
+                            <li><a href="//www.imooc.com/" target="_blank">网站首页</a></li>
+                            <li><a href="//www.imooc.com/about/cooperate" target="_blank" title="企业合作">企业合作</a></li>
+                            <li><a href="//www.imooc.com/about/job" target="_blank">人才招聘</a></li>
+                            <li> <a href="//www.imooc.com/about/contact" target="_blank">联系我们</a></li>
+                            <li> <a href="//www.imooc.com/about/recruit" target="_blank">讲师招募</a></li>
+                            <li> <a href="//www.imooc.com/help" target="_blank">帮助中心</a></li>
+                            <li> <a href="//www.imooc.com/user/feedback?order" target="_blank">意见反馈</a></li>
+                            <li><a href="http://daxue.imooc.com/" target="_blank">慕课大学</a></li>
+                            <li><a href="//git.imooc.com" target="_blank">代码托管</a></li>
+                            <li> <a href="//www.imooc.com/about/friendly" target="_blank">友情链接</a></li>
+                        </ul>
+                    </div>
+                    <p>Copyright © 2019 imooc.com All Rights Reserved | 京ICP备 12003892号-11</p>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="lottery">
+        <a href="//www.imooc.com/act/szjsys2019#jslottery" class="elevator-lottery" target="_blank">
+        </a>
+    </div>
+    <div id="J_GotoTop" class="elevator">
+        <a href="//www.imooc.com/user/feedback?order" class="elevator-msg" target="_blank">
+            <i class="imv2-feedback"></i>
+            <span class="">意见反馈</span>
+        </a>
+        <a href="//order.imooc.com/pay/sharegoods" class="elevator-dist" target="_blank">
+            <i class=""></i>
+            <span class="">去赚学费</span>
+        </a>
+        <a href="//www.imooc.com/help" class="elevator-faq" target="_blank">
+            <i class="imv2-help_outline"></i>
+            <span class="">帮助中心</span>
+        </a>
+        <a href="//www.imooc.com/mobile/app" target="_blank" class="elevator-app">
+            <i class="imv2-appdownload"></i>
+            <span class="">APP下载</span>
+            <div class="elevator-app-box"></div>
+        </a>
+        <a href="javascript:void(0)" class="elevator-weixin no-goto" id="js-elevator-weixin">
+            <i class="imv2-weixigzh"></i>
+            <span class="">官方微信</span>
+            <div class="elevator-weixin-box"></div>
+        </a>
+        <a href="javascript:void(0)" class="elevator-top no-goto" style="display:none" id="backTop">
+            <i class="imv2-arrow2_u"></i>
+            <span class="">返回顶部</span>
+        </a>
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,545 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>qq_慕瓜4328270的课程</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<meta name="renderer" content="webkit" />
+	<link rel="stylesheet" href="../../static/lib/moco/css/moco.min.css" type="text/css" />
+	<link rel="stylesheet" href="../../static/lib/swiper/swiper-3.4.2.jquery.min-t=201903011632.css">
+	<link rel="stylesheet" href="../../static/css/course/mycourse/free.css" />
+
+</head>
+
+<body>
+	<div id="new_header">
+		<div class="page-container new-header clearfix" id="nav">
+			<ul class="nav-item">
+				<li><a href="/" target="_self" class="imooc">慕课网首页</a></li>
+				<li><a href="/course/list" target="_self">免费课程</a></li>
+				<li><a href="//coding.imooc.com" target="_self">实战课程</a></li>
+				<li><a href="//class.imooc.com" class="" target="_self">就业班<i class="icn-new"></i></a></li>
+				<li><a href="/read" target="_self">专栏</a></li>
+				<li><a href="/wenda" target="_self">猿问</a></li>
+				<li><a href="/article" target="_self">手记</a></li>
+				<!-- <li><a href="//job.imooc.com" target="_self">猿聘<i class="icn-new"></i></a></li> -->
+				<li class="search" id="common-nav-search">
+					<a href="javascript:void(0);">
+						<i class="imv2-search"></i>
+					</a>
+				</li>
+				<li class="input-search hide" id="common-input-search">
+					<div class="input-box">
+						<input type="text" class="nav-search-input" autocomplete="off">
+						<a href="javascript:void(0);" class="nav-searchBtn js-nav-searchBtn">
+							<i class="imv2-search"></i>
+						</a>
+					</div>
+					<div class="nav-search-box hide">
+						<div class="hot">
+							<h2>热搜</h2>
+							<div class="hot-box">
+							</div>
+						</div>
+						<div class="history hide">
+							<h2>最近搜索<a href="javascript:void(0);" class="history-clear js-clear-history">清空</a></h2>
+							<div class="history-box">
+							</div>
+						</div>
+					</div>
+					<div class="nav-correlate-box hide">
+						<div class="correlate">
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="header-right clearfix">
+				<div class="dist-money">
+					<a href="//order.imooc.com/pay/sharegoods" target="_blank">
+						<div class="redPacket"></div>分享赚学费
+					</a>
+				</div>
+				<div class="app-download" id="js-app-load">
+					<a href="//www.imooc.com/mobile/app" target="_blank" style="width:60px;">下载APP</a>
+					<div class="app-load-box clearfix js-load-box">
+						<div class="browser-load-box">
+							<h4>慕课网浏览器 - PC客户端</h4>
+							<a class="app-load-btn" href="//www.imooc.com/mobile/app"><i
+									class="imv2-windows"></i>Windows版</a>
+							<span class="browser-load-mac">Mac版开发中，敬请期待…</span>
+						</div>
+						<div class="mobile-load-box">
+							<h4>慕课网APP - 随时随地学编程</h4>
+							<img src="/static/img/common/appload.png" class="l">
+							<div class="r">
+								<a class="app-load-btn"
+									href="https://itunes.apple.com/cn/app/mu-ke-wang/id722179140?mt=8"
+									target="_blank"><i class="icon-apple"></i>App Store下载</a>
+								<a class="app-load-btn" href="//www.imooc.com/mobile/appdown" target="_blank"><i
+										class="icon-android"></i>Android下载</a>
+								<p>扫描下载慕课网APP</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="shop-cart" id="shop-cart">
+					<a href="//order.imooc.com/pay/cart" class="shop-cart-icon" target="_blank">
+						<span class="imv2-cart js-endcart"></span><span>购物车</span><span
+							class="shopping_icon js-cart-num" data-ordernum="0" data-cartnum="0"
+							style="display: none">0</span>
+					</a>
+					<div class="my-cart" id="js-my-cart"></div>
+				</div>
+				<div id="login-area">
+					<ul class="clearfix logined">
+						<li class="remind_warp">
+							<i class="msg_remind"></i>
+							<a target="_blank" href="//www.imooc.com/u/7613182/notices">
+								<i class="imv2-notifications"></i>
+							</a>
+						</li>
+						<li class="user-card-box" id="header-user-card">
+							<a id="header-avator" class="user-card-item js-header-avator" action-type="my_menu"
+								href="/u/index" target="_self">
+								<img width="40" height="40">
+								<i class="myspace_remind" style="display: none;"></i>
+								<span style="display: none;">动态提醒</span>
+							</a>
+							<div class="g-user-card"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="bindHintBox js-bindHintBox hide">
+		<div class="pr">
+			为了账号安全，请及时绑定邮箱和手机<a href="/user/setbindsns" class="ml20 color-red" target="_blank">立即绑定</a>
+			<button class="closeBindHint js-closeBindHint" type="button"></button>
+			<div class="arrow"> </div>
+		</div>
+	</div>
+	<div id="main">
+
+		<div class="bg-other user-head-info">
+			<div class="user-info clearfix">
+				<div class="user-pic" data-is-fans="0" data-is-follows="">
+					<div class="user-pic-bg">
+						<img class="img" src="//img4.mukewang.com/5b8ceda00001841902000200-140-140.jpg" alt="" />
+					</div>
+					<!--user-pic-big end-->
+				</div>
+				<div class="user-info-right">
+					<h3 class="user-name clearfix">
+						<span>qq_慕瓜4328270</span>
+					</h3>
+					<!--25-->
+					<p class="about-info">
+						<span>女</span>
+						<span>
+
+						</span>
+						<a class="more-user-info"><i class="imv2-arrow2_d"></i>更多信息</a>
+					</p>
+				</div>
+				<div class="user-sign hide">
+					<p class="user-desc">这位同学很懒，木有签名的说～</p>
+				</div>
+				<div class="study-info clearfix">
+					<div class="item follows">
+						<div class="u-info-learn" title="学习时长1小时6分" style="cursor:pointer;">
+							<em>1h</em>
+							<span>学习时长 </span>
+						</div>
+					</div>
+					<div class="item follows">
+						<a href="/u/index/experience"><em>20</em></a>
+
+						<span>经验</span>
+					</div>
+					<div class="item follows">
+						<a href="/u/index/credit"><em>0</em></a>
+
+						<span>积分</span>
+					</div>
+					<div class="item follows">
+						<a href="/u/index/follows"><em>1</em></a>
+						<span>关注</span>
+					</div>
+					<div class="item follows">
+						<a href="/u/index/fans"><em>1</em></a>
+						<span>粉丝</span>
+					</div>
+					<div class="item follows"><a href="/user/setbindsns" class="set-btn"><i
+								class="icon-set"></i>个人设置</a></div>
+
+
+				</div>
+				<!--.study-info end-->
+			</div><!-- .user-info end -->
+		</div><!-- .big-pic end -->
+		<div class="wrap">
+
+			<div class="slider">
+				<ul>
+
+					<li>
+						<a href="/u/index">
+							<i class="icon-home"></i><span>动态圈</span><b class="icon-drop_right"></b>
+						</a>
+					</li>
+
+
+					<li>
+						<a href="/u/index/courses" class="active">
+							<i class="icon-tick"></i><span>免费课程</span><b class="icon-drop_right"></b>
+						</a>
+					</li>
+
+					<li>
+						<a href="/u/index/plans">
+							<i class="imv2-path"></i><span>就业班</span><b class="icon-drop_right"></b>
+						</a>
+					</li>
+
+					<li>
+						<a href="/u/index/szcourses/list">
+							<i class="imv2-war"></i><span>实战</span><b class="icon-drop_right"></b>
+						</a>
+					</li>
+
+					<!-- 只能自己看的 -->
+
+					<li>
+						<a href="/u/index/notebook">
+							<i class="imv2-nav_note"></i><span>笔记</span><b class="icon-drop_right"></b>
+						</a>
+					</li>
+
+					<li>
+						<a href="/u/index/bbs">
+							<i class="icon-yuanwen"></i><span>猿问</span><b class="icon-drop_right"></b>
+						</a>
+					</li>
+
+					<li>
+						<a href="/u/index/articles">
+							<i class="icon-blog"></i><span>手记</span><b class="icon-drop_right"></b>
+						</a>
+					</li>
+
+					<li>
+						<a href="/u/index/read">
+							<i class="imv2-feather-o"></i><span>专栏</span><b class="icon-drop_right"></b>
+						</a>
+					</li>
+
+
+
+				</ul>
+			</div><!-- .slider end -->
+			<div class="u-container">
+				<div class="c-tab clearfix">
+					<div class="tool-left l">
+
+						<a href="/u/7613182/courses" class="sort-item active">最近学习</a>
+						<a href="/u/7613182/courses?sort=follow" class="sort-item ">我的收藏</a>
+
+
+
+
+					</div>
+					<div class="tool-right r">
+						<div class="tool-all">
+							<span id="js-columall" class="tool-item">
+								<span>
+
+									全部课程
+
+								</span>
+								<i class="tool-item icon icon-drop_down"></i>
+							</span>
+							<ul id="js-columbd" class="all-cont" style="display:none;">
+
+								<li><a data-id="0" href="/u/7613182/courses?sort=time&skill_id=0">全部课程</a></li>
+								<li><a data-id="7" href="/u/7613182/courses?sort=time&skill_id=7">HTML/CSS</a></li>
+								<li><a data-id="219" href="/u/7613182/courses?sort=time&skill_id=219">jQuery</a></li>
+								<li><a data-id="952" href="/u/7613182/courses?sort=time&skill_id=952">MySQL</a></li>
+								<li><a href="/u/7613182/courses?sort=time">全部课程</a></li>
+							</ul>
+
+						</div>
+					</div>
+				</div>
+
+				<div class="js-course-list my-space-course study-tl">
+					<div class="clearfix tl-item  tl-item-first">
+						<span class="time">
+							<b>2019</b>
+							<em>03月17日</em>
+						</span>
+						<div class="course-list course-list-m">
+							<ul class="clearfix">
+								<li class="course-one" data-courseid="9" data-uid="7613182">
+									<div class="course-list-img l">
+										<a href="/learn/9" target="_blank">
+											<img width="200" height="113" alt="初识HTML+CSS"
+												src="//img.mukewang.com/529dc3380001379906000338-240-135.jpg" />
+										</a>
+									</div>
+									<div class="course-list-cont">
+										<h3 class="study-hd">
+											<a href="/learn/9" target="_blank">初识HTML+CSS</a>
+
+											<span class="i-new">更新完毕</span>
+											<!-- 更新完毕 -->
+											<!-- 收藏和删除 -->
+											<div class="share-box clearfix">
+												<div class="show-btn"><i class="icon-down2"></i></div>
+												<div class="share-box-con courses-r">
+													<a href="javascript:;" title="收藏" class="follow custom_f"><i
+															class="icon icon-star_outline"></i></a>
+													<a href="javascript:;" title="删除" class="del"><i
+															class="icon icon-notdisplay"></i></a>
+
+												</div>
+											</div>
+										</h3>
+										<div class="study-points">
+											<span class="i-left span-common">已学0%</span>
+											<span class="i-mid span-common">用时 1小时 5分</span>
+											<span class="i-right span-common">学习至1-1 代码初体验，制作我的第一个网页</span>
+										</div>
+										<div class="catog-points">
+											<span class="i-left span-common"><a href="/u/7613182/notepad/9">笔记
+													<i>0</i></a></span>
+											<span class="i-mid span-common"><a href="/u/7613182/course/9/codes">代码
+													<i>0</i></a></span>
+											<span class="i-right span-common"><a href="/u/7613182/course/9/questions">问答
+													<i>0</i></a></span>
+
+											<a href="/video/49" target="_blank" class="btn-red continute-btn">继续学习</a>
+
+										</div>
+									</div>
+
+
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="clearfix tl-item ">
+						<span class="time">
+							<b>2019</b>
+							<em>03月06日</em>
+						</span>
+						<div class="course-list course-list-m">
+							<ul class="clearfix">
+								<li class="course-one" data-courseid="117" data-uid="7613182">
+									<div class="course-list-img l">
+										<a href="/learn/117" target="_blank">
+											<img width="200" height="113" alt="数据库设计那些事"
+												src="//img.mukewang.com/5707679e000116a506000338-240-135.jpg" />
+										</a>
+									</div>
+									<div class="course-list-cont">
+										<h3 class="study-hd">
+											<a href="/learn/117" target="_blank">数据库设计那些事</a>
+
+											<span class="i-new">更新完毕</span>
+											<!-- 更新完毕 -->
+											<!-- 收藏和删除 -->
+											<div class="share-box clearfix">
+												<div class="show-btn"><i class="icon-down2"></i></div>
+												<div class="share-box-con courses-r">
+													<a href="javascript:;" title="收藏" class="follow custom_f"><i
+															class="icon icon-star_outline"></i></a>
+													<a href="javascript:;" title="删除" class="del"><i
+															class="icon icon-notdisplay"></i></a>
+
+												</div>
+											</div>
+										</h3>
+										<div class="study-points">
+											<span class="i-left span-common">已学9%</span>
+											<span class="i-mid span-common">用时 1分</span>
+											<span class="i-right span-common">学习至1-2 数据库设计的步骤</span>
+										</div>
+										<div class="catog-points">
+											<span class="i-left span-common"><a href="/u/7613182/notepad/117">笔记
+													<i>0</i></a></span>
+											<span class="i-mid span-common"><a href="/u/7613182/course/117/codes">代码
+													<i>0</i></a></span>
+											<span class="i-right span-common"><a
+													href="/u/7613182/course/117/questions">问答 <i>0</i></a></span>
+
+											<a href="/video/1904" target="_blank" class="btn-red continute-btn">继续学习</a>
+
+										</div>
+									</div>
+
+
+								</li>
+							</ul>
+						</div>
+					</div>
+
+					<div class="clearfix tl-item  tl-item-last">
+						<span class="time">
+							<b>2019</b>
+							<em>03月04日</em>
+						</span>
+						<div class="course-list course-list-m">
+							<ul class="clearfix">
+								<li class="course-one" data-courseid="222" data-uid="7613182">
+									<div class="course-list-img l">
+										<a href="/learn/222" target="_blank">
+											<img width="200" height="113" alt="jQuery源码解析（DOM与核心模块）"
+												src="//img.mukewang.com/570b05f4000194e506000338-240-135.jpg" />
+										</a>
+									</div>
+									<div class="course-list-cont">
+										<h3 class="study-hd">
+											<a href="/learn/222" target="_blank">jQuery源码解析（DOM与核心模块）</a>
+
+											<span class="i-new">更新完毕</span>
+											<!-- 更新完毕 -->
+											<!-- 收藏和删除 -->
+											<div class="share-box clearfix">
+												<div class="show-btn"><i class="icon-down2"></i></div>
+												<div class="share-box-con courses-r">
+													<a href="javascript:;" title="收藏" class="follow custom_f"><i
+															class="icon icon-star_outline"></i></a>
+													<a href="javascript:;" title="删除" class="del"><i
+															class="icon icon-notdisplay"></i></a>
+
+												</div>
+											</div>
+										</h3>
+										<div class="study-points">
+											<span class="i-left span-common">已学0%</span>
+											<span class="i-mid span-common">用时 0分</span>
+											<span class="i-right span-common">学习至1-1 什么是遍历？</span>
+										</div>
+										<div class="catog-points">
+											<span class="i-left span-common"><a href="/u/7613182/notepad/222">笔记
+													<i>0</i></a></span>
+											<span class="i-mid span-common"><a href="/u/7613182/course/222/codes">代码
+													<i>0</i></a></span>
+											<span class="i-right span-common"><a
+													href="/u/7613182/course/222/questions">问答 <i>0</i></a></span>
+
+											<a href="/video/4674" target="_blank" class="btn-red continute-btn">继续学习</a>
+
+										</div>
+									</div>
+
+
+								</li>
+							</ul>
+						</div>
+					</div>
+
+				</div>
+				<!-- 分页 -->
+				<div class="qa-comment-page">
+				</div>
+
+
+			</div><!-- .container end -->
+		</div><!-- .wrap end-->
+
+	</div>
+
+	<div id="footer" data="u,courses">
+		<div class="waper">
+			<div class="footerwaper clearfix">
+				<div class="followus r">
+					<a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+						<div class="flw-weixin-box"></div>
+					</a>
+					<a class="followus-weibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+					<a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank"
+						title="QQ空间"></a>
+				</div>
+				<div class="footer_intro l">
+					<div class="footer_link">
+						<ul>
+							<li><a href="//www.imooc.com/" target="_blank">网站首页</a></li>
+							<li><a href="/index/companytrain" target="_blank" title="企业合作">企业合作</a></li>
+							<li><a href="/about/job" target="_blank">人才招聘</a></li>
+							<li> <a href="/about/contact" target="_blank">联系我们</a></li>
+							<li> <a href="/about/recruit" target="_blank">讲师招募</a></li>
+							<li> <a href="/help" target="_blank">帮助中心</a></li>
+							<li> <a href="/user/feedback" target="_blank">意见反馈</a></li>
+							<li><a href="http://daxue.imooc.com/" target="_blank">慕课大学</a></li>
+							<li><a href="https://git.imooc.com" target="_blank">代码托管</a></li>
+							<li> <a href="/about/friendly" target="_blank">友情链接</a></li>
+						</ul>
+					</div>
+					<p>Copyright © 2019 imooc.com All Rights Reserved | 京ICP备 12003892号-11 </p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div id="J_GotoTop" class="elevator">
+		<a href="/user/feedback" class="elevator-msg" target="_blank">
+			<i class="icon-feedback"></i>
+			<span class="">意见反馈</span>
+		</a>
+		<a href="//order.imooc.com/pay/sharegoods" class="elevator-dist" target="_blank">
+			<i class=""></i>
+			<span class="">去赚学费</span>
+		</a>
+		<a href="/help" class="elevator-faq" target="_blank">
+			<i class="icon-ques"></i>
+			<span class="">帮助中心</span>
+		</a>
+		<a href="//www.imooc.com/mobile/app" target="_blank" class="elevator-app">
+			<i class="icon-appdownload"></i>
+			<span class="">APP下载</span>
+			<div class="elevator-app-box"></div>
+		</a>
+		<a href="javascript:void(0)" class="elevator-weixin no-goto" id="js-elevator-weixin">
+			<i class="icon-wxgzh"></i>
+			<span class="">官方微信</span>
+			<div class="elevator-weixin-box"></div>
+		</a>
+		<a href="javascript:void(0)" class="elevator-top no-goto" style="display:none" id="backTop">
+			<i class="icon-up2"></i>
+			<span class="">返回顶部</span>
+		</a>
+	</div>
+
+
+	<div class="lottery" id="moco-right-float-advertising"></div>
+
+	<style type="text/css">
+		.myClassList table td dl dd {
+			margin-top: 88px
+		}
+
+		#face_panel {
+			z-index: 99999999
+		}
+	</style>
+
+	<div id="layer_sendmsg" class="font-colorg" style="display:none">
+
+		<div class="sendadd">
+			<h4>发送好友申请<span class="tipclose"></span></h4>
+			<div class="sendcon">
+				<textarea class="chatInput" id="textInput" type="text" name="说点什么吧" cols="1"></textarea>
+			</div>
+			<div class="sendsq">
+				<a href="javascript:void(0)" id="sendBtn" class="sendInvite btn btn-green">发送申请</a>
+			</div>
+		</div>
+	</div>
+</body>
+
+</html>

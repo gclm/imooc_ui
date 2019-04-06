@@ -1,0 +1,993 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<meta property="qc:admins" content="77103107776553571676375" />
+	<meta property="wb:webmaster" content="c4f857219bfae3cb" />
+	<meta http-equiv="Access-Control-Allow-Origin" content="*" />
+	<meta name="Keywords" content="" />
+	<meta name="Description" content="超酷的互联网、IT技术免费学习平台，创新的网络一站式学习、实践体验；服务及时贴心，内容专业、有趣易学。专注服务互联网工程师快速成为技术高手！" />
+
+	<meta http-equiv="Cache-Control" content="no-transform" />
+	<meta http-equiv="Cache-Control" content="no-siteapp" />
+
+	<title>数据库设计的步骤，数据库设计那些事教程-慕课网</title>
+
+	<link rel="stylesheet" href="../static/lib/layer/1.6.0/skin/layer.css" />
+	<link href="../static/moco/v1.0/dist/css/captcha.min-v.css.css" rel="stylesheet">
+	<script type="text/javascript">
+		var OP_CONFIG = {
+			"module": "course",
+			"page": "video",
+			"userout": 0,
+			"usercaution": null,
+			"userInfo": {
+				"uid": 7613182,
+				"uidaes": "IW2mbSvMlGo,"
+			}
+		};
+		var _msg_unread = 0;
+		var _not_unread = 0;
+		var _cart_num = 0;
+		var need_bind_num = "0";
+		var tplDef = {
+			"url_space_u": "/space/u",
+			"url_space_index": "/space/index",
+			"url_space_course": "/space/course",
+			"myclub_rule": "/help",
+			"url_course_qadetail": "/qadetail",
+			"media_id": "1904"
+		}
+		var seajsTimestamp = "v=201903261132";
+		var courseName = "数据库设计那些事";
+		var isLogin = 1;
+	</script>
+
+	<link rel="alternate" media="only screen and (max-width: 640px)" href="https://m.imooc.com/video/1904">
+
+	<script type="text/javascript">
+		var pageInfo = {
+			mid: 1904
+		};
+		var video_id = 1449;
+		var course_id = 117;
+		var chapter_id = 579;
+		var ispreview = "0";
+		var videoTitle = "1-2 数据库设计的步骤";
+
+		OP_CONFIG.mongo_id = "584a1702b3fee3b2278b52bc";
+		OP_CONFIG.page = "video2.4";
+	</script>
+
+	<link rel="stylesheet" href="../static/css/video/video.css" type="text/css" />
+</head>
+
+<body>
+
+
+	<div id="header" class="course-detail-header">
+		<div class="cd-inner clearfix">
+			<ul class="l">
+				<li class="nv nv-goback"><a href="/learn/117" class="revert l"><i class="imv2-arrow3_l"></i></a></li>
+				<li class="nv nv-menu">
+					<a href="javascript:;" class="chaptername J-chaptername" data-id="1904" style="cursor:text;">
+
+						<em>1-2 数据库设计的步骤</em>
+					</a>
+				</li>
+				<li class="nv nv-follow-a">
+					<div class="follow-action js-follow-action clearfix" data-prompt="1">
+						<i class=""></i>
+						<span>收藏</span>
+					</div>
+				</li>
+				<li class="nv nv-share bdsharebuttonbox">
+					<!-- note:bdshare cannt user inner icon tag-->
+					<a class="bds_weixin" data-cmd="weixin"></a>
+					<a class="bds_qzone" data-cmd="qzone" href="#"></a>
+					<a class="bds_tsina" data-cmd="tsina"></a>
+
+					<div style="display:none" id="coursePic"><img
+							src="//img.mukewang.com/5707679e000116a506000338-590-330.jpg"></div>
+				</li>
+
+			</ul>
+
+			<div id="login-area">
+				<ul class="clearfix logined">
+					<li class="shop-cart" id="shop-cart">
+						<a href="//order.imooc.com/pay/cart" class="shop-cart-icon" target="_blank">
+							<span class="icon-shopping-cart js-endcart"></span>
+							<span>购物车</span>
+							<span class="shopping_icon js-cart-num" data-ordernum="0" data-cartnum="0"
+								style="display: none">0</span>
+						</a>
+						<div class="my-cart" id="js-my-cart"></div>
+					</li>
+
+					<li class="remind_warp">
+						<i class="msg_remind"></i>
+						<a target="_blank" href="/u/7613182/notices">
+							<i class="icon-notifi"></i>
+							<!-- <span class="msg_icon" style="display: none;"></span> -->
+						</a>
+					</li>
+					<li class="set_btn user-card-box" id="header-user-card">
+						<a id="header-avator" class="user-card-item" action-type="my_menu" href="/u/7613182/courses"
+							target="_self"><img src="//img4.mukewang.com/user/5b8ceda00001841902000200-40-40.jpg"
+								width="40" height="40" />
+							<i class="myspace_remind" style="display: none;"></i>
+							<span style="display: none;">动态提醒</span>
+						</a>
+						<div class="g-user-card">
+						</div>
+					</li>
+				</ul>
+			</div>
+
+
+			<div class="search-warp clearfix">
+
+
+				<div class="search-area" data-search="top-banner">
+					<input class="search-input" data-suggest-trigger="suggest-trigger" placeholder="搜索感兴趣的内容"
+						type="text" autocomplete="off">
+					<input type="hidden" class="btn_search" data-search-btn="search-btn" />
+					<ul class="search-area-result" data-suggest-result="suggest-result">
+					</ul>
+				</div>
+				<div class="showhide-search" data-show="no"><i class="icon-search"></i></div>
+			</div>
+		</div>
+	</div>
+
+	<div id="studyMain">
+
+
+		<div id="bgarea" class="video-con">
+
+			<div id="courseLayout" class="course-layout">
+
+				<div id="js-ques-box"></div>
+				<!--此处结构为练习题，视频，编程公用的侧栏-->
+				<div class="section-list">
+
+					<div class="nano">
+						<div class="nano-content chapter-list">
+
+							<ul>
+								<li class="sec-title">
+									<span>第1章 需求分析</span>
+								</li>
+								<li class="sec-li" data-id="1903">
+									<a class="clearfix" href="/video/1903"><em class="imv2-video_circle"></em>1-1
+										数据库设计简介(04:56)</a>
+								</li>
+								<li class="sec-li" data-id="1904">
+									<a class="clearfix" href="/video/1904"><em class="imv2-video_circle"></em>1-2
+										数据库设计的步骤(03:39)</a>
+								</li>
+								<li class="sec-li" data-id="1905">
+									<a class="clearfix" href="/video/1905"><em class="imv2-video_circle"></em>1-3
+										需求分析重要性简介(03:59)</a>
+								</li>
+								<li class="sec-li" data-id="1906">
+									<a class="clearfix" href="/video/1906"><em class="imv2-video_circle"></em>1-4
+										需求分析举例(07:04)</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="sec-title">
+									<span>第2章 逻辑设计</span>
+								</li>
+								<li class="sec-li" data-id="1913">
+									<a class="clearfix" href="/video/1913"><em class="imv2-video_circle"></em>2-1
+										ER图(04:36)</a>
+								</li>
+								<li class="sec-li" data-id="1914">
+									<a class="clearfix" href="/video/1914"><em class="imv2-video_circle"></em>2-2
+										设计范式概要(03:05)</a>
+								</li>
+								<li class="sec-li" data-id="1915">
+									<a class="clearfix" href="/video/1915"><em class="imv2-video_circle"></em>2-3
+										第一范式(01:35)</a>
+								</li>
+								<li class="sec-li" data-id="1916">
+									<a class="clearfix" href="/video/1916"><em class="imv2-video_circle"></em>2-4
+										第二范式(05:45)</a>
+								</li>
+								<li class="sec-li" data-id="1917">
+									<a class="clearfix" href="/video/1917"><em class="imv2-video_circle"></em>2-5
+										第三范式(05:18)</a>
+								</li>
+								<li class="sec-li" data-id="1918">
+									<a class="clearfix" href="/video/1918"><em class="imv2-video_circle"></em>2-6
+										BC范式(04:59)</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="sec-title">
+									<span>第3章 物理设计</span>
+								</li>
+								<li class="sec-li" data-id="1907">
+									<a class="clearfix" href="/video/1907"><em class="imv2-video_circle"></em>3-1
+										数据库物理设计要做什么(04:02)</a>
+								</li>
+								<li class="sec-li" data-id="1908">
+									<a class="clearfix" href="/video/1908"><em class="imv2-video_circle"></em>3-2
+										选择哪种数据库(03:41)</a>
+								</li>
+								<li class="sec-li" data-id="1909">
+									<a class="clearfix" href="/video/1909"><em class="imv2-video_circle"></em>3-3
+										MYSQL常用存储引擎(05:25)</a>
+								</li>
+								<li class="sec-li" data-id="1910">
+									<a class="clearfix" href="/video/1910"><em class="imv2-video_circle"></em>3-4
+										数据库表及字段的命名规则(03:39)</a>
+								</li>
+								<li class="sec-li" data-id="1925">
+									<a class="clearfix" href="/video/1925"><em class="imv2-video_circle"></em>3-5
+										数据库字段类型选择原则(05:34)</a>
+								</li>
+								<li class="sec-li" data-id="1937">
+									<a class="clearfix" href="/video/1937"><em class="imv2-video_circle"></em>3-6
+										数据库如何具体选字段类型(06:39)</a>
+								</li>
+								<li class="sec-li" data-id="1938">
+									<a class="clearfix" href="/video/1938"><em class="imv2-video_circle"></em>3-7
+										数据库设计其它注意事项(07:05)</a>
+								</li>
+								<li class="sec-li" data-id="1939">
+									<a class="clearfix" href="/video/1939"><em class="imv2-video_circle"></em>3-8
+										反范式化表设计(06:06)</a>
+								</li>
+							</ul>
+							<ul>
+								<li class="sec-title">
+									<span>第4章 维护优化</span>
+								</li>
+								<li class="sec-li" data-id="1919">
+									<a class="clearfix" href="/video/1919"><em class="imv2-video_circle"></em>4-1
+										数据库维护和优化要做什么(02:30)</a>
+								</li>
+								<li class="sec-li" data-id="1920">
+									<a class="clearfix" href="/video/1920"><em class="imv2-video_circle"></em>4-2
+										数据库如何维护数据字典(02:30)</a>
+								</li>
+								<li class="sec-li" data-id="1921">
+									<a class="clearfix" href="/video/1921"><em class="imv2-video_circle"></em>4-3
+										数据库如何维护索引(05:12)</a>
+								</li>
+								<li class="sec-li" data-id="1922">
+									<a class="clearfix" href="/video/1922"><em class="imv2-video_circle"></em>4-4
+										数据库中适合的操作(05:38)</a>
+								</li>
+								<li class="sec-li" data-id="1923">
+									<a class="clearfix" href="/video/1923"><em class="imv2-video_circle"></em>4-5
+										数据库表的垂直和水平拆分(04:12)</a>
+								</li>
+							</ul>
+						</div>
+					</div>
+				</div>
+				<div class="course-sidebar-layout" id="courseSidebar">
+					<dl>
+						<dd class="openchapter">
+							<i class="imv2-nav_chapter"></i>
+							<span>章节</span>
+						</dd>
+						<dd class="openpanel" data-panel="qa">
+							<i class="imv2-yuanwen"></i>
+							<span>问答</span>
+						</dd>
+						<dd class="openpanel" data-panel="note">
+							<i class="imv2-homework"></i>
+							<span>笔记</span>
+						</dd>
+						<dd class="opencomment">
+							<i class="imv2-chat_bubble"></i>
+							<span>评论</span>
+						</dd>
+						<dd class="vhidden">
+							<span>占位</span>
+						</dd>
+						<dd class="vhidden">
+							<span>占位</span>
+						</dd>
+					</dl>
+				</div>
+
+				<div class="course-center-layout" id="courseCenter" data-minw="500">
+
+					<div class="js-box-wrap course-video-wrap">
+						<div id="J_Box" class="course-video-box">
+							<div id="video-box" class="video-wrap" style="width:100%;height:100%"></div>
+							<div class="next-box J_next-box hide">
+								<div class="next-box-inner">
+
+									<div class="course-tip-layer J-next-course" data-next-src="/video/1905">
+										<!--<div class="wechat-box js-wechat-box">
+                            <a href="javascript:void(0)" class="moco-icon-close moco-modal-close wechat-close js-wechat-close"></a>
+                            检测到您还没有关注慕课网服务号，无法接收课程更新通知。请扫描二维码即可绑定<div style="text-align:center">
+                            <img width="100%" src=""></div>
+                        </div>-->
+
+										<h2>下一节课程： 需求分析重要性简介
+											<span class="course-duration"> (03:59)</span>
+										</h2>
+										<div class="J-next-auto hide next-auto"><em>3</em> 秒后播放下一节</div>
+										<div class="J-next-btn hide next-auto btn btn-green">下一节</div>
+										<a href="/video/1904/0" class="review-course">重新观看</a>
+
+									</div>
+
+								</div>
+							</div>
+						</div>
+					</div>
+
+				</div>
+
+				<div class="course-right-layout" id="courseRight" data-minw="414">
+					<div class="course-right-nano">
+						<div class="nano-right-content nano-content">
+
+
+							<div class="c-panel video-panel current">
+								<i class="imv2-close video-panel-close"></i>
+								<i class="imv2-arrow3_l video-panel-show"></i>
+								<div class="panel-container">
+									<div class="v-teachers clearfix">
+										<a href="/u/184799/courses?sort=publish" class="v-teachers-img" target="_blank">
+											<img src="//img4.mukewang.com/5ad7144100017a5e07410741-100-100.jpg" />
+										</a>
+										<dl>
+											<dd class="v-t-nickname">
+												<a href="/u/184799/courses?sort=publish" target="_blank">sqlercn</a><i
+													class="imv2-imooc" title="慕课网认证讲师"></i>
+											</dd>
+											<dd class="v-t-title">数据库工程师</dd>
+										</dl>
+									</div>
+									<p class="v-teachers-info">
+										高级数据库工程师（DBA），从事数据库管理工作多年，曾就职于聚美优品、猫扑、TOM等多家大型互联网公司，进行过千万级的数据处理，对大数据业务、高并发时数据优化积累了大量丰富的经验。
+									</p>
+									<input type="hidden" id="teacher_id" value="184799">
+									<!-- 这是广告位，无论如何都得有这个容器分割上下元素 -->
+									<div class="adver-con">
+									</div>
+
+									<script type="text/imooc-tpl" id="v-course-tpl">
+										{@if data.length > 0}
+<div class="v-course-wrap">
+    <h3>$${title}</h3>
+    <div class="v-course-list clearfix">
+        {@each data as item}
+        {@if item.course_type == "MF"}
+        <a class="v-course" href="/learn/$${item.id}" target="_blank">
+        {@else if item.course_type == "SZ"}
+        <a class="v-course" href="http://coding.imooc.com/class/${item.id}.html" target="_blank">
+        {@else if item.course_type == "LJ"}
+        <a class="v-course" href="http://class.imooc.com/sc/${item.id}" target="_blank">
+        {@/if}
+            <img src="$${item.pic}" />
+
+            <div class="v-course-name">$${item.name}</div>
+            <div class="v-course-info clearfix">
+                {@if item.course_type}
+                    <span>
+                        {@if item.course_type == "MF"}
+                            免费
+                        {@else if item.course_type == "SZ"}
+                            实战
+                        {@else if item.course_type == "LJ"}
+                            就业班
+                        {@/if}
+                    </span>
+                {@/if}
+                {@if item.easy_type}
+                    <span>$${item.easy_type}</span>
+                {@/if}
+                <span><i class="imv2-set-sns"></i>$${item.numbers}</span>
+            </div>
+        </a>     
+        {@/each}        
+    </div>
+</div>
+{@/if}
+</script>
+
+								</div>
+							</div>
+
+
+							<div class="c-panel qa-panel">
+
+								<i class="imv2-close panel-close"></i>
+
+								<div id="jsPutqa" class="putqa panel-t">
+									<h3>提问题</h3>
+									<input type="text" placeholder="请一句话说明你的问题" />
+									<p class="error-tip"></p>
+									<textarea id="qa-panel-editor">请输入问题内容...</textarea>
+									<p class="error-tip qa-panel-editor-error-tip"></p>
+									<div class="clearfix">
+										<a href="javascript:;" class="moco-btn moco-btn-red putqa-submit">提交</a>
+										<div class="r errortip-btm js-panel-error-big-tip"></div>
+									</div>
+									<div class="captcha-verify-box js-qa-panel-verify-box hide"></div>
+								</div>
+
+								<div class="panel-list">
+									<h3>其他问答</h3>
+									<div id="panelQaList" class=""></div>
+									<div class="panel-btn-wrap">
+										<a href="javascript:;" class="moco-btn moco-btn-gray-l js-link-qa">查看更多本节问答</a>
+									</div>
+								</div>
+
+							</div>
+							<div class="c-panel note-panel">
+								<i class="imv2-close panel-close"></i>
+								<div id="jsPutNote" class="putnote panel-t">
+									<h3>写笔记</h3>
+									<textarea id="note-panel-editor">请输入笔记内容...</textarea>
+									<p class="note-panel-error-tip error-tip"></p>
+									<div class="clearfix">
+										<div title="截图" class="js-shot-pic screen-btn" data-type="note">
+											<span>截图</span>
+										</div>
+										<a href="javascript:;" class="moco-btn moco-btn-red putnote-submit">提交</a>
+									</div>
+									<div class="captcha-verify-box js-note-panel-verify-box hide"></div>
+								</div>
+								<div class="panel-list">
+									<h3>我的笔记</h3>
+									<div id="panelNoteList" class=""></div>
+									<div class="panel-btn-wrap">
+										<a href="/u/7613182/notepad/117" class="moco-btn moco-btn-gray-l"
+											target="_blank">查看更多我的笔记</a>
+									</div>
+								</div>
+							</div>
+
+						</div>
+					</div>
+
+					<div id="courseDrag" class="course-drag">
+						<div class="drag"></div>
+					</div>
+				</div>
+			</div>
+		</div>
+
+	</div>
+
+	<div class="publicnumber-block js-publicnumber-block"></div>
+	<div id="BindingPublicNumber" class="js-publicnumber-tipoff">
+		<i class="moco-icon-close moco-modal-close js-bindcode-close"></i>
+		<div class="publicnumber-content">
+			<div class="crode-ql js-wechat-code">
+				<!-- <img src="" alt="加群二维码"> -->
+				<p>打开微信扫码自动绑定</p>
+			</div>
+			<div class="crode-qr">
+				<h2>您还未绑定服务号</h2>
+				<p>绑定后可得到</p>
+				<ul>
+					<li>· 粉丝专属优惠福利</li>
+					<li>· 大咖直播交流干货</li>
+					<li>· 课程更新,问题答复提醒</li>
+					<li>· 账号支付安全提醒</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+
+	<div class="tipoff-block js-tipoff-block"></div>
+	<div class="tipoff-box js-tipoff-box">
+		<div class="tipoff-top-box clearfix">
+			<p class="l tipoff-title">举报</p>
+			<span class="r tipoff-close-btn icon-close2 js-tipoff-close"></span>
+		</div>
+		<div class="tipoff-type-box js-tipoff-typebox clearfix">
+			<div class="tipoff-loading">
+				<div class="bounce1"></div>
+				<div class="bounce2"></div>
+				<div class="bounce3"></div>
+			</div>
+		</div>
+		<div class="tipoff-content">
+			<textarea name="tipoff-content" class="tipoff-desc js-tipoff-desc" placeholder="写下举报理由"></textarea>
+			<div class="tipoff-text"><span class="js-tipoff-text">0</span>/150</div>
+		</div>
+		<div class="tipoff-btn-box clearfix">
+			<div class="r tipoff-submit-btn js-tipoff-submit" data-tipofftype="">提交</div>
+			<div class="r tipoff-cancel-btn js-tipoff-close">取消</div>
+		</div>
+	</div>
+
+
+
+
+
+
+	<div class="subcontainer">
+
+		<div class="course-subnav js-course-subnav">
+			<ul class="clearfix">
+				<li data-type="qa" class="current">问答</li>
+				<li data-type="comment">评论</li>
+				<li data-type="note">同学笔记</li>
+			</ul>
+		</div>
+
+		<div class="course-subcontainer clearfix">
+			<div class="course-left">
+
+				<div id="tabwrap">
+					<div class="js-tab-item tab-item c-qalist current" data-type="qa">
+						<div class="comp-filter-bar clearfix">
+							<a href="javascript:;" class="moco-change-smalle-btn active" data-t="/t/2">全部</a>
+							<a href="javascript:;" class="moco-change-smalle-btn" data-t="/t/4">精华</a>
+							<span class="js-pub-btn moco-btn moco-btn-gray-l">我要发布</span>
+						</div>
+						<div id="qaContainer" class="answertabcon"></div>
+						<div class="paginationwrap">
+							<div class="pagination"></div>
+						</div>
+					</div>
+
+					<div class="js-tab-item tab-item c-comment" data-type="comment">
+						<div class="comp-filter-bar clearfix">
+							<a href="javascript:;" class="moco-change-smalle-btn active">全部</a>
+							<span class="js-pub-btn moco-btn moco-btn-gray-l">我要发布</span>
+						</div>
+						<div id="commentContainer" class="answertabcon"></div>
+						<div class="paginationwrap">
+							<div class="pagination"></div>
+						</div>
+					</div>
+
+					<div class="js-tab-item tab-item c-notelist" data-type="note">
+						<div class="comp-filter-bar clearfix">
+							<a href="javascript:;" class="moco-change-smalle-btn active" data-sort="last">最新</a>
+							<a href="javascript:;" class="moco-change-smalle-btn" data-sort="sugg">点赞</a>
+
+							<div class="tool-right r">
+								<a href="javascript:;" class="hide-learned tool-chk l">
+									<div class="switch js-lookme">
+										<div class="switch-line"></div>
+										<div class="round js-lookme-round"></div>
+									</div>
+								</a>
+								<span class="tool-item hide-learned tool-chk" href="javascript:;">只看我的</span>
+							</div>
+						</div>
+
+						<div id="noteContainer" class="answertabcon"></div>
+						<div class="paginationwrap">
+							<div class="pagination"></div>
+						</div>
+					</div>
+
+
+
+
+
+
+				</div>
+
+
+				<script type="text/imooc-tpl" id="note-tpl">
+					{@if list && list.length > 0}
+<ul id="js-note-container" class="mod-post">
+{@each list as notes, i}
+<li id="$${notes.id}" class="post-row js-find-txt" courseid="$${notes.course_id}" noteId="$${notes.id}" uid="$${flag}_$${notes.id}" authorid="$${notes.author_id}">
+  <div class="media">
+    <a href="/u/$${notes.author_id}/courses" target="_blank"><img src="$${notes.head}" width="40" height="40"></a>
+  </div>
+  <div class="bd">
+    <div class="tit">
+      <a href="/u/$${notes.author_id}/courses" target="_blank">$${notes.nickname}</a>
+    </div>
+
+
+    <div class="js-note-main">
+    {@if notes.media_type}
+    <div class="note-media">
+      <a href="/{@if notes.media_type==1 }video{@/if}{@if notes.media_type==2 }code{@/if}{@if notes.media_type==3 }ceping{@/if}/$${notes.media_id}" class="from l">源自：$${notes.chapter_seq}-$${notes.media_seq} $${notes.media_name}</a>
+    </div>
+    {@/if}
+
+    {@if notes.author_id != userInfo.uid }
+    <a href="javascript:;" data-id="$${notes.id}" data-type="8" data-uid="$${notes.author_id}" class="js-tip-off r tipoff" data-src="$${url}">举报</a>
+    {@/if}
+    <div class="js-notelist-content notelist-content">
+      <div class="autowrap note-content">$${notes.content}</div>
+    </div>
+    <div class="clearfix">
+      <input class="moco-btn moco-btn-green sava_btn" type="button" value="保存">
+    </div>
+
+
+    {@if notes.picture_url != ""}
+    <div class="note-img">
+      <div class="note-img-box">
+             <img class="js-catch-pic" src="$${notes.picture_url}" data-src="$${notes.picture_url.split("-")[0]}.jpg" width="156" height="88">
+             <i>{@if notes.pic_time_fmt == ""}00:00{@else}$${notes.pic_time_fmt}{@/if}</i>
+        </div>
+        <a href="/video/$${notes.media_id}/$${notes.pic_time}" target="_blank" class="view-video"><i class="imv2-video"></i>看视频</a>
+    </div>
+    {@/if}
+
+    {@if notes.lang>0}
+    <div class="note-img">
+      <div class="note-code js-show-node-code"  data-id="$${notes.id}">
+        <div class="note-code-view"><i class="imv2-fullscreen"></i>查看代码快照</div>
+        <img src="/static/img/codeview.png" alt="">
+      </div>
+    </div>
+    {@/if}
+
+
+    <div class="footer clearfix">
+      <div class="actions l">
+        <a title="赞" href="javascript:;" class="Jpraise moco-btn moco-btn-gray-l l"  data-mid="$${notes.media_id}">
+          <span class="icon-thumb-revert"></span>
+          <em>$${notes.praise_num}</em>
+        </a>
+
+        <a title="采集" href="javascript:;" class="Jcollect post-action "  data-mid="$${notes.media_id}|$${notes.author_id}">
+          <i>采集</i>
+          <em>$${notes.collect_num}</em>
+        </a>
+
+        <a href="/notepad/$${notes._url}" target="_blank" class="post-action">查看全文</a>
+      </div>
+      <span title="$${notes.update_time_fmt}" class="r timeago">$${notes.update_time_fmt}</span>
+    </div>
+    </div>
+    {@if notes.author_id == userInfo.uid }
+    <div class="js-note-editor note-editor"  style="display:none;">
+        $${notes.content|getScriptHtml,flag,notes.id}
+        <div class="note-editor-tool">
+            <a href="javascript:void(0)" class="moco-btn js-note-cancel">取消</a><a href="javascript:void(0)" class="moco-btn moco-btn-red js-note-submit">提交</a>
+        </div>
+    </div>
+    {@/if}
+  </div>
+</li>
+{@/each}
+</ul>
+{@else}
+    {@if !panel}
+    <div class="tab-nodata">
+        <i class="imv2-error_c"></i>
+        <p>目前暂无任何同学笔记</p>
+    </div>
+    {@/if}
+{@/if}
+</script>
+				<script type="text/imooc-tpl" id="qa-tpl">
+
+					{@if list.length > 0}
+<div class="course_quescon mod-post">
+    {@each list as cont, i}
+
+    {@if sort == "comment"}
+    <div class="wenda-listcon mod-qa-list post-row clearfix" data-id="$${cont.id}">
+        <div class="headslider qa-medias l">
+            <a href="/u/$${cont.uid}/courses" class="media" target="_blank" title="$${cont.nickname}"><img src="$${cont.head}" width="40" height="40"></a>
+        </div>
+        <div class="wendaslider qa-content">
+            <div class="tit">
+                <a href="/u/$${cont.uid}/courses" target="_blank">$${cont.nickname}</a>
+            </div>
+            <div class="cnt">$${cont.description|nl2br}</div>
+
+
+            <div class="replymegfooter qa-footer clearfix">
+                <div class="l-box l">
+                    <a title="赞" href="javascript:;" class="js-pl-praise moco-btn moco-btn-gray-l"  data-id="$${cont.id}">
+                        <span class="icon-thumb-revert"></span>
+                        <em>$${cont.support_num}</em>
+                    </a>
+
+                {@if cont.media_seq > 0}
+                <a href="/{@if cont.media_type==1 }video{@else if cont.media_type==2 }code{@else if cont.media_type==3 }ceping{@/if}/{cont.media_id}" class="from">$${cont.chapter_seq}-$${cont.media_seq} $${cont.media_name}</a>
+                {@/if}
+
+                    {@if cont.uid != userInfo.uid }
+                    <a href="javascript:;" data-id="$${cont.id}" data-type="4" data-uid="$${cont.uid}" class="js-tip-off" data-src="$${url}">举报</a>
+                    {@/if}
+                </div>
+
+                <span class="r timeago">$${cont.update_time}</span>
+            </div>
+        </div>
+    </div>
+    {@else}
+    <div class="wenda-listcon mod-qa-list clearfix">
+        {@if cont.finished > 0}
+        <div class="icon-finish"></div>
+        {@else}
+         <div class="icon-wenda"></div>
+        {@/if}
+        <div class="headslider qa-medias l">
+            <a href="/u/$${cont.uid}/courses" class="media" target="_blank" title="$${cont.nickname}"><img src="$${cont.head}" width="40" height="40"></a>
+        </div>
+        <div class="wendaslider qa-content">
+            <h2 class="wendaquetitle qa-header">
+                <div class="wendatitlecon qa-header-cnt clearfix">
+                    <a href="/qadetail/$${cont.id}" target="_blank" class="qa-tit">
+                        {@if cont.title}$${cont.title}{@else}$${cont.description}{@/if}
+                    </a>
+                    {@if cont.credit_show == 1}
+                    <span class="add-integral">+1 积分</span>
+                    {@/if}
+                </div>
+            </h2>
+            <div class="replycont qa-body clearfix">
+                {@if cont.reply}
+                    {@if cont.reply.type == "best"}
+                        <div class="l replydes best">
+                            <span class="replysign"><span class="adopt">已采纳回答</span> / <a href="/u/$${cont.reply.uid}/courses" target="_blank" title="$${cont.reply.nickname}" class="nickname">$${cont.reply.nickname}</a></span>
+                            <div class="replydet">$${cont.reply.description}</div>
+                        </div>
+                    {@else if cont.reply.type == "teacher"}
+                        <div class="l replydes">
+                            <span class="replysign">讲师回答 / <a href="/u/$${cont.reply.uid}/courses" target="_blank" title="$${cont.reply.nickname}" class="nickname">$${cont.reply.nickname}</a><i class="icon-imooc" title="慕课网讲师"></i></span>
+                            <div class="replydet">$${cont.reply.description}</div>
+                        </div>
+                    {@else if cont.reply.type == "hot"}
+                        <div class="l replydes">
+                            <span class="replysign">最赞回答 / <a href="/u/$${cont.reply.uid}/courses" target="_blank" title="$${cont.reply.nickname}" class="nickname">$${cont.reply.nickname}</a></span>
+                            <div class="replydet">$${cont.reply.description}</div>
+                        </div>
+                    {@else if cont.reply.type == "last"}
+                        <div class="l replydes">
+                            <span class="replysign">最新回答 / <a href="/u/$${cont.reply.uid}/courses" target="_blank" title="$${cont.reply.nickname}" class="nickname">$${cont.reply.nickname}</a></span>
+                            <div class="replydet">$${cont.reply.description}</div>
+                        </div>
+                    {@/if}
+                {@else}
+                        <a href="/qadetail/$${cont.id}" class="moco-btn moco-btn-gray-l" target="_blank">+ 我来回答</a>
+                        <span class="wait-answer icon-drop_left">回答最高可+2积分</span>
+                {@/if}
+            </div>
+            <div class="replymegfooter qa-footer clearfix">
+                <div class="l-box l">
+                    <a href="/qadetail/$${cont.id}" target="_blank" class="replynumber static-count ">
+                        <span class="static-item answer">
+                            $${cont.answers} 回答
+                        </span>
+                        <span class="static-item">
+                            $${cont.view_num} 浏览
+                        </span>
+                    </a>
+                    {@if cont.chapter_seqid && cont.media_seqid}
+                    <a href="/video/$${cont.media_id}" target="_blank">$${cont.chapter_seqid}-$${cont.media_seqid} $${cont.media_name}</a>
+                    {@/if}
+                </div>
+
+                <em class="r">$${cont.update_time}</em>
+            </div>
+        </div>
+    </div>
+    {@/if}
+    {@/each}
+</div>
+{@else}
+    {@if !panel}
+    <div class="tab-nodata">
+        <i class="imv2-error_c"></i>
+        {@if sort == "comment"}
+            <p>目前暂无任何评论</p>
+        {@else}
+            <p>目前暂无任何问答</p>
+        {@/if}
+    </div>
+    {@/if}
+{@/if}
+</script>
+
+				<script type="text/imooc-tpl" id="code-tpl">
+					{@if list.length > 0}
+<ul>
+    {@each list as item, i}
+    <li>
+        <div class="clearfix code-uhead">
+            <a href="/u/$${item.uid}/courses" target="_blank">
+                <img src="$${item.portrait}" />
+            </a>
+            <dl>
+                <dt>
+                    <a href="/u/$${item.uid}/courses" target="_blank">$${item.nickname}</a>
+                </dt>
+                <dd>$${item.create_time}</dd>
+            </dl>
+        </div>
+
+        <a href="javascript:;" class="lookcode js-lookcode moco-btn-dark clearfix" data-id="$${item.id}">
+            <i class="imv2-code"></i>
+            <span>查看代码</span>
+        </a>
+
+        <span class="moco-ico-btn moco-btn-gray-l js-code-praise code-praise {@if item.has_support}active{@/if}" data-id="$${item.id}"><i class="imv2-thumb_up"></i><em>$${item.support}</em></span>
+    </li>
+    {@/each}
+</ul>
+{@else}
+<div class="tab-nodata">
+    <i class="imv2-error_c"></i>
+    <p>目前暂无任何同学代码</p>
+</div>
+{@/if}
+</script>
+			</div>
+			<div class="course-right clearfix">
+				<!-- 这是广告位，无论如何都得有这个容器分割上下元素 -->
+				<div class="adver-con">
+				</div>
+				<div class="js-commend-box">
+				</div>
+				<div class="js-tag-box">
+				</div>
+				<div class="js-related-box">
+				</div>
+				<div class="articlelist js-right-article">
+					<div class="course-right-title">
+						<h4>手记推荐</h4>
+						<a href="/article/?block_id=tuijian_wz" target="_blank" class="more">更多</a>
+					</div>
+					<div class="course-right-content">
+
+					</div>
+					<ul>
+
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+
+
+
+	<div class="maybe-wenda" id="maybe-wenda" style="display: none;">
+		<i class="icon-chat"></i>
+		<p class="text">你发的评论可能会是问题？<br />是否将他发到问答中</p>
+		<input class="btn ok" type="button" value="好的" id="wenda-ok">
+		<input class="btn no" type="button" value="不用" id="wenda-no">
+	</div>
+
+	<div id="footer">
+		<div class="waper">
+			<div class="footerwaper clearfix">
+				<div class="followus r">
+					<a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+						<div class="flw-weixin-box"></div>
+					</a>
+					<a class="followus-weibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+					<a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank"
+						title="QQ空间"></a>
+				</div>
+				<div class="footer_intro l">
+					<div class="footer_link">
+						<ul>
+							<li><a href="//www.imooc.com/" target="_blank">网站首页</a></li>
+							<li><a href="/about/cooperate" target="_blank" title="企业合作">企业合作</a></li>
+							<li><a href="/about/job" target="_blank">人才招聘</a></li>
+							<li> <a href="/about/contact" target="_blank">联系我们</a></li>
+							<!--<li><a href="/subject/html" target="_blank">专题页面</a></li>-->
+							<li><a href="/about/us" target="_blank">关于我们</a></li>
+							<li> <a href="/about/recruit" target="_blank">讲师招募</a></li>
+							<li> <a href="/user/feedback" target="_blank">意见反馈</a></li>
+							<li> <a href="/about/friendly" target="_blank">友情链接</a></li>
+						</ul>
+					</div>
+					<p>Copyright © 2018 imooc.com All Rights Reserved | 京ICP备 13046642号-2</p>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<!--笔记弹出框-->
+
+	<script type="text/imooc-tpl" id="course-note-tpl">
+		<div class="note-pop">
+        <div>
+            <textarea data-maxlength="1000" id="js-note-textarea" class="js-placeholder" name="" placeholder="请输入笔记内容..."></textarea>
+        </div>
+        <div class="publish-note-btns input-btm clearfix">
+            <!-- <div class="verify-code clearfix"></div> -->
+                                            <div title="截图"  class="js-shot-video screen-btn" data-type="note">
+                    <span>截图</span>
+                </div>
+                                        <div class="captcha-verify-box js-notepop-verify-box hide"></div>
+            <input type="button" title="发表" value="保存" id="js-note-submit" class="moco-btn moco-btn-red r" />
+            <!-- <label for="js-isshare"  class="label-checked r"><input type="checkbox" checked="checked" id="js-isshare" class="checked" /> 公开</label> -->
+        </div>
+</div>
+</script>
+	<!--问答弹出框 通用-->
+	<script type="text/imooc-tpl" id="course-qa-tpl">
+
+		<div class="qa-pop">
+        <div class="question-area">
+            <div class="qa-control qa-ipt-title">
+                <input type="text" id="js-qa-title" maxlength="255" class="js-placeholder autocomplete" placeholder="请输入问题标题" />
+            </div>
+            <a href="//www.imooc.com/wenda/detail/292353" target="_blank" class="another-meth">如何更好<br />的提问？</a>
+            <dl class="send-area-result">
+            </dl>
+        </div>
+
+        <div class="qa-control-wrap clearfix">
+            <div class="qa-control">
+                <div class="rich-text-editor">
+                    <textarea id="discuss-editor" >请输入讨论内容...</textarea>
+                </div>
+            </div>
+        </div>
+        <div id="js-discuss-btm" class="discuss-bottom input-btm clearfix pop-footer">
+                                            <div title="截图"  class="js-shot-video screen-btn" data-type="qa">
+                    <span>截图</span>
+                </div>
+                                        <div class="captcha-verify-box js-pop-verify-box hide"></div>
+            <input id="js-discuss-submit" class="moco-btn moco-btn-red r" type="button" value="发布" />
+        </div>
+        <div id="use-credit-tip" class="use-credit-tip">
+            <span class="credit-info">本次提问将花费2个积分</span>
+            <a class="credit-rule" href="/help" target="_blank">为什么扣积分？</a>
+        </div>
+    </div>
+
+</script>
+	<!--积分弹出框-->
+	<div class="integral-pop" id="no-credit">
+		<div class="pop-con">
+			<span class="icon-point"></span>
+			<p>本次提问将花费2个积分</p>
+			<p>你的积分不足，无法发表</p>
+			<a class="integral-rule" href="/help" target="_blank">为什么扣积分？</a>
+			<div class="ft clearfix">
+				<a href="javascript:void(0)" class="btn btn-green l cancel-cf">确认</a>
+				<a href="javascript:void(0)" class="btn btn-grey r cancel-cf">取消</a>
+			</div>
+		</div>
+	</div>
+	<div class="integral-pop" id="enough-credit">
+		<div class="pop-con">
+			<span class="icon-point"></span>
+			<p>本次提问将花费2个积分</p>
+			<p>继续发表请点击 "确定"</p>
+			<a class="integral-rule" href="/help" target="_blank">为什么扣积分？</a>
+			<div class="ft clearfix">
+				<a id="interal-use" href="javascript:void(0)" class="btn btn-green l">确认</a>
+				<a id="interal-cancel" href="javascript:void(0)" class="btn btn-grey r">取消</a>
+			</div>
+		</div>
+	</div>
+
+	<!--WIKI弹出框 通用-->
+	<script type="text/imooc-tpl" id="course-wiki-tpl">
+		<div class="wiki-pop">
+
+        <div class="search_box clearfix">
+            <input class="search_ipt" type="text" placeholder="输入你想要找的WiKi词条名称" />
+            <input type="button" value="搜索" class="search_btn" />
+            <a class="createwiki" href="/wiki/create" target="_blank">创建wiki</a>
+        </div>
+        
+        <div id="js-search-area-result" class="search-area-result">
+        </div>
+    </div>
+
+</script>
+	<div id="video_mark" class="video_mark" style="display:none;"></div>
+</body>
+
+</html>

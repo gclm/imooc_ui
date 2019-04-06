@@ -1,0 +1,894 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+	<meta charset="utf-8">
+	<title>从基础到实战手把手带你掌握新版Webpack4-慕课网</title>
+	<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+	<link rel="stylesheet" href="../static/css/course/detail.css" type="text/css" />
+	<link rel="stylesheet" href="../static/css/course/detail1.css" type="text/css" />
+	<link merge="false" rel="stylesheet" type="text/css" href="../static/css/course/316-less.css" />
+</head>
+
+<body>
+
+	<div id="header">
+		<div class="page-container new-header" id="nav">
+			<ul class="nav-item">
+				<li><a href="//www.imooc.com" target="_self" class="imooc">慕课网首页</a></li>
+				<li><a href="list-.html" target="_self">免费课程</a></li>
+				<li><a href="/" class="active" target="_self">实战课程</a></li>
+				<li><a href="//class.imooc.com" target="_self">就业班<i class="icn-new"></i></a></li>
+				<li class="search" id="common-nav-search">
+					<a href="javascript:void(0);">
+						<i class="imv2-search"></i>
+					</a>
+				</li>
+				<li class="input-search hide" id="common-input-search">
+					<div class="input-box">
+						<input type="text" class="nav-search-input" autocomplete="off">
+						<a href="javascript:void(0);" class="nav-searchBtn js-nav-searchBtn">
+							<i class="imv2-search"></i>
+						</a>
+					</div>
+					<div class="nav-search-box hide">
+						<div class="hot">
+							<h2>热搜</h2>
+							<div class="hot-box">
+							</div>
+						</div>
+						<div class="history hide">
+							<h2>最近搜索<a href="javascript:void(0);" class="history-clear js-clear-history">清空</a></h2>
+							<div class="history-box">
+							</div>
+						</div>
+					</div>
+					<div class="nav-correlate-box hide">
+						<div class="correlate">
+						</div>
+					</div>
+				</li>
+			</ul>
+			<div class="header-right clearfix">
+				<div class="app-download" id="js-app-load">
+					<a href="//www.imooc.com/mobile/app" target="_blank">下载APP</a>
+					<div class="app-load-box clearfix js-load-box">
+						<div class="browser-load-box">
+							<h4>慕课网浏览器 - PC客户端</h4>
+							<a class="app-load-btn" href="//www.imooc.com/mobile/app" target="_blank"><i
+									class="imv2-windows"></i>Windows版</a>
+							<span class="browser-load-mac">Mac版开发中，敬请期待…</span>
+						</div>
+						<div class="mobile-load-box">
+							<h4>慕课网APP - 随时随地学编程</h4>
+							<img src="//www.imooc.com/static/img/common/appload.png" class="l">
+							<div class="r">
+								<a class="app-load-btn"
+									href="https://itunes.apple.com/cn/app/mu-ke-wang/id722179140?mt=8"
+									target="_blank"><i class="icon-apple"></i>App Store下载</a>
+								<a class="app-load-btn" href="//www.imooc.com/mobile/appdown" target="_blank"><i
+										class="icon-android"></i>Android下载</a>
+								<p>扫描下载慕课网APP</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="shop-cart" id="shop-cart">
+					<a href="//order.imooc.com/pay/cart" class="shop-cart-icon" target="_blank">
+						<span class="imv2-cart js-endcart"></span><span>购物车</span><span
+							class="shopping_icon js-cart-num" data-ordernum="0" data-cartnum="0" data-prevnum="0"
+							style="display: none">0</span>
+					</a>
+					<div class="my-cart" id="js-my-cart"></div>
+				</div>
+				<div id="login-area">
+					<ul class="clearfix logined">
+						<li class="remind_warp">
+							<i class="msg_remind"></i>
+							<a target="_blank" href="//www.imooc.com/u/7613182/notices">
+								<i class="imv2-notifications"></i>
+							</a>
+						</li>
+						<li class="user-card-box" id="header-user-card">
+							<a id="header-avator" class="user-card-item js-header-avator" action-type="my_menu"
+								href="//www.imooc.com/u/index" target="_self">
+								<img width="40" height="40">
+								<i class="myspace_remind" style="display: none;"></i>
+								<span style="display: none;">动态提醒</span>
+							</a>
+							<div class="g-user-card"></div>
+						</li>
+					</ul>
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="course-infos-top " style="background-image:url(//img.mukewang.com/szimg/5c6bdb4f09c2401020000400.jpg)">
+		<div class="info-wrap">
+			<div class="path">
+				<a href="//www.imooc.com">
+					<i class="imv2-imooc"></i>
+				</a>
+				<i class="split">/</i>
+				<a href="/">实战</a>
+				<i class="split">/</i>
+				<span>从基础到实战 手把手带你掌握新版Webpack4.0</span>
+			</div>
+			<div class="extra">
+				<div class="course-collect clearfix js-course-collect l" data-type="0" data-cid="316">
+					<i class="imv2-star j"></i><span>收藏</span>
+				</div>
+				<!-- 分销的分享不同于普通分享 -->
+				<div class="share-action l bdsharebuttonbox bdshare-button-style0-16 " data-bd-bind="1439263858135">
+					<div class="share-money js-share-present" data-id="316" data-type="1"
+						data-name="从基础到实战 手把手带你掌握新版Webpack4.0">分享赚
+						¥ 29.90</div>
+				</div>
+			</div>
+
+			<div class="title-box">
+				<h1>从基础到实战 手把手带你掌握新版Webpack4.0</h1>
+				<h2>融合技能+项目+思想 讲解前端开发必学的Webpack</h2>
+			</div>
+
+			<div class="hide">
+				<h1 class="l">从基础到实战 手把手带你掌握新版Webpack4.0</h1>
+			</div>
+
+		</div>
+		<div class="fixed-wrap" style="bottom:-64px">
+			<div class="con">
+				<!-- 只在未购买和已购买正常转状态显示 -->
+				<div class="time-price clearfix">
+					<div class="no-discount clearfix l">
+						<!-- 没有任何活动 -->
+						<div class="ori-price l">
+							￥299.00
+						</div>
+					</div>
+					<div class="can-huabei l">
+						<a href="//www.imooc.com/help/detail/110" target="_blank">花呗付款</a>
+					</div>
+
+					<a href="//www.imooc.com/help/detail/138" target="_blank" class="moneyoff-info l">
+						满399减30
+					</a>
+					<a href="//www.imooc.com/help/detail/138" target="_blank" class="moneyoff-info l">
+						满599减80
+					</a>
+				</div>
+
+				<div class="info-bar clearfix" style="margin-top:px">
+					<span>难度</span>
+					<span class="nodistance">中级</span>
+					<i class="imv2-dot_samll"></i>
+					<span>时长</span>
+					<span class="nodistance">17小时</span>
+					<i class="imv2-dot_samll"></i>
+					<span>学习人数</span>
+					<span class="nodistance">846</span>
+					<i class="imv2-dot_samll"></i>
+					<span>综合评分</span>
+					<span class="nodistance">10.00分</span>
+				</div>
+
+				<div class="btns">
+					<a href="javascript:;" class="js-buy-trigger red-btn gobuy" data-cid="316" data-pay="0"
+						id="buy-trigger">
+						立即购买
+					</a>
+					<a href="javascript:;" class="js-addcart addcart" data-cid="316" data-type="1">
+						加购物车
+					</a>
+
+				</div>
+			</div>
+		</div>
+	</div>
+
+	<div class="course-infos-t ">
+		<div id="Anchor"></div>
+		<div class="comp-tab-t js-comp-tab">
+			<ul class="clearfix">
+				<li class="comp-tab-item-first comp-tab-item active ">
+					<a href="/class/316.html#Anchor">课程介绍</a>
+					<div class="borderLine"></div>
+				</li>
+				<li class="comp-tab-item  ">
+					<a href="/class/package/316.html#Anchor">组合套餐</a>
+					<div class="borderLine"></div>
+
+				</li>
+				<li class="comp-tab-item ">
+					<a href="/class/chapter/316.html#Anchor">章节目录<img class="try-mark"
+							src="../static/img/course/try-mark.png" alt=""></a>
+					<div class="borderLine"></div>
+				</li>
+				<li class="comp-tab-item">
+					<a href="/class/316.html#Prchor">售前咨询</a>
+					<span>9</span>
+					<div class="borderLine"></div>
+				</li>
+				<li class="comp-tab-item ">
+					<a href="/class/evaluation/316.html#Anchor">用户评价</a>
+					<span>37</span>
+					<div class="borderLine"></div>
+				</li>
+
+				<li class="comp-tab-item ">
+					<a href="/class/316.html#Envir">环境参数</a>
+
+				</li>
+			</ul>
+		</div>
+
+		<div class="js-fixed course-fixed-nav hide">
+			<h3 class="fixed-course-name" title="从基础到实战 手把手带你掌握新版Webpack4.0">从基础到实战 手把手带你掌握新版Webpack4.0</h3>
+
+			<ul class="fixed-nav clearfix">
+				<li class="fixed-nav-item active">
+					<a href="/class/316.html#Anchor">课程介绍</a>
+					<div class="borderLine"></div>
+				</li>
+				<li class="fixed-nav-item ">
+					<a href="/class/package/316.html#Anchor">组合套餐</a>
+					<div class="borderLine"></div>
+				</li>
+				<li class="fixed-nav-item ">
+					<a href="/class/chapter/316.html#Anchor">章节目录<img class="try-mark"
+							src="../static/img/course/try-mark.png" alt=""></a>
+					<div class="borderLine"></div>
+				</li>
+				<li class="fixed-nav-item">
+					<a href="/class/316.html#Prchor">售前咨询</a>
+					<span>9</span>
+					<div class="borderLine"></div>
+				</li>
+				<li class="fixed-nav-item ">
+					<a href="/class/evaluation/316.html#Anchor">用户评价</a>
+					<span>37</span>
+					<div class="borderLine"></div>
+				</li>
+				<li class="fixed-nav-item ">
+					<a href="/class/316.html#Envir">环境参数</a>
+					<div class="borderLine"></div>
+				</li>
+			</ul>
+
+			<div class="buy-con">
+				<div class="btns-buy r">
+					<a href="javascript:;" class="js-buy-trigger fixed-red" data-cid="316" data-pay="0"
+						id="buy-trigger">
+						立即购买
+					</a>
+					<a href="javascript:;" class="js-addcart addcart" data-cid="316" data-type="1">
+						<i class="sz-add-shopping-cart"></i>
+					</a>
+				</div>
+
+				<!-- 限时优惠倒计时 -->
+				<span class="r ori-price">￥299.00</span>
+			</div>
+		</div>
+
+
+		<div class="info-video clearfix"
+			style="background-image: url(//img.mukewang.com/szimg/5c6bdb5e0868f6a609000500.jpg);">
+			<div class="video-dark-box l clearfix" style="display: block">
+				<div class="js-video-btn videoBtn l">
+					<div><i class="sz-play js-enter-tryMedia"></i></div>
+					<p>观看试看视频</p>
+				</div>
+				<div id="videoInfo" class="l">
+					<div id="content">
+						<div class="con">
+							<div class="info-name">从基础到实战 手把手带你掌握新版Webpack4.0</div>
+							<div class="info-desc">Webpack 目前无论在求职还是工作中，使用越来越普及。而想要学懂，学会Webpack更绝非易事。本课程完整讲清最新版本下的
+								Webpack 4 知识体系，通过 基础 +
+								实例 + 原理代码编写 + 复杂案例分析 完成Webpack4的分析与讲解。更重要的是让你对整个前端项目的构建有一个全局化的认识，实现能力思想双升级。
+							</div>
+
+						</div>
+
+						<div class="line"></div>
+					</div>
+
+				</div>
+			</div>
+			<div class="detail-white-box l" style="display: none;">
+
+				<div class="scrollConTeacher">
+
+					<div class="detailContent">
+						<div class="nickname">DellLee</div>
+						<div class="jobType">资深前端工程师</div>
+						<div class="introduce" data-text="&lt;p&gt;BAT资深前端工程师，负责数据平台技术研发。前去哪儿网高级前端工程师，曾主导去哪儿网内部前端监控系统设计，负责去哪儿门票用户端的前端设计开发。曾担任国内知名培训机构高级前端讲师，负责React，Angular，Vue，Hybrid，RN的课程讲授，具备丰富前端授课经验。&lt;/p&gt;
+">
+
+						</div>
+
+					</div>
+					<div class="division clearfix">
+						<h3 class="l">讲师其他课程</h3>
+						<p class="r"></p>
+					</div>
+
+					<div class="recommend clearfix">
+						<a href="https://coding.imooc.com/class/203.html" target="_blank">
+							<div class="item l clearfix" id="item0" style="margin-right: 32px">
+
+								<img alt=" Vue2.5开发去哪儿网App 从零基础入门到实战项目"
+									src="//img.mukewang.com/szimg/5ac2dfe100014a9005400300-360-202.jpg" class="l">
+
+								<div class="textCon">
+									<div class="className"> Vue2.5开发去哪儿网App 从零基础入门到实战项目</div>
+									<div class="typeNumCon">
+										<span class="type">实战</span>
+										<span class="difficulty">中级</span>
+										<span class="headImg"></span>
+
+										<span class="peopleNum"><i class="imv2-set-sns"></i>5152</span>
+									</div>
+									<div class="priceDiscount clearfix">
+										<div class="price l">￥266.00</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</a>
+						<a href="https://coding.imooc.com/class/229.html" target="_blank">
+							<div class="item l clearfix" id="item1">
+
+								<img alt="React 16.4 开发简书项目 从零基础入门到实战 "
+									src="//img.mukewang.com/szimg/5b3082da0001d7e905400300-360-202.jpg" class="l">
+
+								<div class="textCon">
+									<div class="className">React 16.4 开发简书项目 从零基础入门到实战 </div>
+									<div class="typeNumCon">
+										<span class="type">实战</span>
+										<span class="difficulty">中级</span>
+										<span class="headImg"></span>
+
+										<span class="peopleNum"><i class="imv2-set-sns"></i>1737</span>
+									</div>
+									<div class="priceDiscount clearfix">
+										<div class="price l">￥299.00</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</a>
+						<a href="https://coding.imooc.com/class/276.html" target="_blank">
+							<div class="item l clearfix" id="item2" style="margin-right: 32px">
+
+								<img alt="React 服务器渲染原理解析与实践"
+									src="//img.mukewang.com/szimg/5ba07190000135b505400300-360-202.jpg" class="l">
+
+								<div class="textCon">
+									<div class="className">React 服务器渲染原理解析与实践</div>
+									<div class="typeNumCon">
+										<span class="type">实战</span>
+										<span class="difficulty">高级</span>
+										<span class="headImg"></span>
+
+										<span class="peopleNum"><i class="imv2-set-sns"></i>438</span>
+									</div>
+									<div class="priceDiscount clearfix">
+										<div class="price l">￥266.00</div>
+
+									</div>
+
+								</div>
+
+							</div>
+						</a>
+
+					</div>
+				</div>
+
+			</div>
+
+
+
+			<div class="teacher-right-box r">
+				<div class="teacher">
+					<div class="whiteBorder"></div>
+					<a href="http://www.imooc.com/u/1975036" target="_blank">
+						<div class="headPortrait">
+							<img src="//img.mukewang.com/user/5abe468b0001664107390741-100-100.jpg">
+						</div>
+						<div class="nickname">DellLee</div>
+					</a>
+					<p>资深前端工程师</p>
+				</div>
+				<div class="jiao" style="display: none;"></div>
+
+			</div>
+			<!-- 导学视频 （旧）-->
+			<div class="comp-tabs-pannel video-container" style="display: none;"
+				data-purl="//img.mukewang.com/szimg/5c6bdb5e0868f6a609000500.jpg"
+				data-vurl="//v3.mukewang.com/shizhan/5c6bd41fe520e5d9568b456b/H.mp4" id="js-video-content">
+				<!-- <div class="desc-short"> -->
+				<div class="video-wrap">
+					<div class="video-container" id="video-container"></div>
+				</div>
+
+				<!-- </div> -->
+
+				<div class="video-mask"></div>
+				<div id="js-video-close" class="video-close imv2-close"></div>
+			</div>
+		</div>
+		<!-- <div id="js-index-video" class="video-container">
+ 	<div class="video-wrap" id="js-video-wrap" data-url="//v3.mukewang.com/shizhan/5c6bd41fe520e5d9568b456b/H.mp4">
+
+  	</div>
+  	<div class="video-mask"></div>
+  	<div id="js-video-close" class="video-close imv2-close"></div>
+</div> -->
+		<!-- 试看视频列表 -2019.01.24-->
+		<div id="video-wrap">
+			<div id="video-box">
+				<div class="video-title">
+					<h2>课程预览</h2>
+					<div id="js-close-mediaview" class="close-mediaview imv2-close"></div>
+				</div>
+				<!-- <div id="try-video-container"></div> -->
+				<ul class="video-list">
+				</ul>
+			</div>
+			<div class="next-mask" id="next-mask">
+				<div class="next-content">
+					<div class="wechat-box js-wechat-box">
+						<a href="javascript:void(0)"
+							class="moco-icon-close moco-modal-close wechat-close js-wechat-close"></a>
+						检测到您还没有关注慕课网服务号，无法接收课程更新通知。请扫描二维码即可绑定<div style="text-align:center">
+							<img width="100%" src=""></div>
+					</div>
+					<div id="next-media-content"></div>
+					<a href="javascript:;" class="view-again js-view-again">
+						<i class="sz-replay"></i>重新观看
+					</a>
+				</div>
+				<i class="helper"></i>
+			</div>
+		</div>
+
+	</div>
+
+
+	<div class="infolayout clearfix">
+
+
+		<div class="appendtemplate">
+			<!--ES_BEGIN-->
+			<div class="introduce-content">
+				<div class="section1">
+					<div class="wrap">
+						<h2>觉得Webpack难学？你可能只是欠缺一位引路人</h2>
+						<div class="content-box clearfix">
+							<div class="box-item">
+								<img src="../static/img/course/section1-1.png">
+								<p class="item-desc">
+									在职场中，Webpack是一项前端人员的<span>必备技能</span>。而官网中文版滞<br>
+									后，配置项冗余，<span>学习资料难寻</span>，许多开发者在自学过程中遇到报错也<br>
+									常常会<span>束手无措</span>。你需要一位引路人，帮助你解答学习中遇到的疑问
+								</p>
+							</div>
+							<div class="box-item">
+								<img src="../static/img/course/section1-2.png">
+								<p class="item-desc">
+									本课程由<span>明星</span>讲师讲解，涵盖了Webpack新版本<span>核心知识</span>，手把手带<br>
+									你<span>实战演练</span>，能够让你从快速入门到<span>彻底掌握</span>Webpack配置。在理解<br>
+									Webpack的作用以及原理的同时，能够真正的<span>学以致用</span>。
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section2">
+					<div class="wrap">
+						<h2>从入门到进阶，全面系统学习Webpack</h2>
+						<h5>前端开发者的必备技能包 拥有前端工程化开发思维</h5>
+						<div class="content-box clearfix">
+							<div class="box-item">
+								<img src="../static/img/course/section2-1.png">
+								<p class="item-title">基础使用</p>
+								<p class="item-desc">
+									认识Webpack<br>
+									了解模块打包<br>
+									多种Webpack安装方式及最佳方案<br>
+									配置<br>
+									命令行
+								</p>
+							</div>
+							<div class="box-item">
+								<img src="../static/img/course/section2-2.png">
+								<p class="item-title">核心知识</p>
+								<p class="item-desc">
+									认识Loader<br>
+									打包静态资源<br>
+									plugins的概念及打包<br>
+									SourceMap 应用与配置<br>
+									WebpackDevServer<br>
+									热模块更新<br>
+									Babel 配置
+								</p>
+							</div>
+							<div class="box-item">
+								<img src="../static/img/course/section2-3.png">
+								<p class="item-title">进阶</p>
+								<p class="item-desc">
+									Tree Shaking<br>
+									Webpack中的分片打包<br>
+									SplitChunksPlugin<br>
+									懒加载和chunk<br>
+									打包分析，Preloading, Prefetching<br>
+									CSS 文件的代码分割<br>
+									浏览器缓存<br>
+									Shimming、环境变量使用方法
+								</p>
+							</div>
+							<div class="box-item">
+								<img src="../static/img/course/section2-4.png">
+								<p class="item-title">原理分析与扩展</p>
+								<p class="item-desc">
+									自定义loader<br>
+									自定义plugin<br>
+									Webpack打包原理全分析<br>
+									Webpack源码设计原理<br>
+									全面性能优化
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section3">
+					<div class="wrap">
+						<h2>真实场景还原 手把手带你从零实现项目配置</h2>
+						<h5>涵盖所有主流技术 在实战中掌握Webpack 使用技巧</h5>
+						<div class="content-box clearfix">
+							<img src="../static/img/course/section3-1.png">
+							<div class="content-right clearfix">
+								<span>单页应用</span>
+								<span>多页应用</span>
+								<span>React</span>
+								<span>Vue</span>
+								<span>Typescript</span>
+								<span>ES6</span>
+								<span>PWA</span>
+								<span>EsLint</span>
+								<span>性能优化</span>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section4">
+					<div class="wrap">
+						<h2>循序渐进，明星讲师带你搞定Webpack应用</h2>
+						<h5>高效完成项目配置 达到百度T4水准</h5>
+						<img src="../static/img/course/section4-1.png" class="img1">
+					</div>
+					<div class="wrap1">
+						<h2>学员专享增值服务</h2>
+						<div class="content-box">
+							<div class="box-item clearfix">
+								<i class="imv2-yuanwen"></i>
+								<div class="item-right">
+									<p class="item-title">问答专区</p>
+									<p class="item-desc">关于课程的问题都可在问答区随时提问,讲师会进行<br>集中答疑</p>
+								</div>
+							</div>
+							<div class="box-item clearfix">
+								<i class="imv2-open_code"></i>
+								<div class="item-right">
+									<p class="item-title">源码开放</p>
+									<p class="item-desc">课程案例代码完全开放给你，你可以根据所学知<br>识，自行修改、优化</p>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+				<div class="section5">
+					<div class="wrap">
+						<div class="content-box clearfix">
+							<div class="box-item l">
+								<h3>适合人群</h3>
+								<p>
+									前端开发者，有过真实项目经历，并在项目中使用过 Webpack ，做过<br>
+									简单配置尝试
+								</p>
+							</div>
+							<div class="box-item r">
+								<h3>技术储备要求</h3>
+								<p>
+									了解 JS 基础语法<br>
+									使用过类似于 Webpack 这样的打包工具<br>
+									对NodeJS有所理解
+								</p>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+
+			<!--ES_END-->
+		</div>
+
+
+		<div class="envir-box" id="Envir">
+			<h1>环境参数</h1>
+			<div class="detail-box">
+				<ul class="clearfix">
+					<li class="l ">
+						<span class="detail-tag">Webpack</span>
+						<i class="triangle"></i>
+						<span class="detail">最新版本4.29</span>
+					</li>
+				</ul>
+			</div>
+		</div>
+
+
+		<div class="user-evaluation-box">
+			<div class="user-evalustion">
+				<h2>万事俱备 只等你来</h2>
+				<ul class="clearfix">
+					<li class="l">
+						<div class="user-box clearfix">
+							<img src="//img.mukewang.com/user/5b8cd8990001a1c002000200-100-100.jpg" width="64"
+								height="64">
+							<p class="user-name">zzydev</p>
+							<div class="user-text-box">
+								<p class="star js-bstar">
+									<span class="star"><i class="sz-star on"></i><i class="sz-star on"></i><i
+											class="sz-star on"></i><i class="sz-star on"></i><i
+											class="sz-star on"></i></span>
+								</p>
+							</div>
+						</div>
+						<p class="content"
+							title="老师的这门webpack是将一个工具，从没有的时候，遇到什么问题，应该怎么解决，到有了webpack之后怎么做，通透地讲明白了本质原理以及如何运用工具。跟着布置的作业看文档会很清晰的认识到一个体系，很赞，希望老师能勤劳出课。早点帮大家串联一个高级前端的完整体系。">
+							老师的这门webpack是将一个工具，从没有的时候，遇到什么问题，应该怎么解决，到有了webpack之后怎么做，通透地讲明白了本质原理以及如何运用工具。跟着布置的作业看文档会很清晰的认识到一个体系，很赞，希望老师能勤劳出课。早点帮大家串联一个高级前端的完整体系。
+						</p>
+					</li>
+					<li class="l">
+						<div class="user-box clearfix">
+							<img src="//img.mukewang.com/user/5718b0970001ab7301000100-100-100.jpg" width="64"
+								height="64">
+							<p class="user-name">彭小呆</p>
+							<div class="user-text-box">
+								<p class="star js-bstar">
+									<span class="star"><i class="sz-star on"></i><i class="sz-star on"></i><i
+											class="sz-star on"></i><i class="sz-star on"></i><i
+											class="sz-star on"></i></span>
+								</p>
+							</div>
+						</div>
+						<p class="content"
+							title="我是小呆，从dell老师的vue去哪里网来的，老师讲课逻辑清晰，由浅到难，非常不错，非常吸引我的是webpack，之前自己搭脚手架的都是用vue自带的，自己都不会，现在希望看了课程，能够自己搭一个出来，哈哈。其实，在it的路上很迷茫，接触过汇编，c，java，python，服务器，等等，现在主要前端开发，希望自己能够在这条路上走得更久更远，收获到一些知识和能力。">
+							我是小呆，从dell老师的vue去哪里网来的，老师讲课逻辑清晰，由浅到难，非常不错，非常吸引我的是webpack，之前自己搭脚手架的都是用vue自带的，自己都不会，现在希望看了课程，能够自己搭一个出来，哈哈。其实，在it的路上很迷茫，接触过汇编，c，java，python，服务器，等等，现在主要前端开发，希望自己能够在这条路上走得更久更远，收获到一些知识和能力。
+						</p>
+					</li>
+					<li class="l">
+						<div class="user-box clearfix">
+							<img src="//img.mukewang.com/user/5b6da4990001751809600960-100-100.jpg" width="64"
+								height="64">
+							<p class="user-name">weixin_桃白白_0</p>
+							<div class="user-text-box">
+								<p class="star js-bstar">
+									<span class="star"><i class="sz-star on"></i><i class="sz-star on"></i><i
+											class="sz-star on"></i><i class="sz-star on"></i><i
+											class="sz-star on"></i></span>
+								</p>
+							</div>
+						</div>
+						<p class="content"
+							title="哎，我是黄老师的金刚粉丝，本来购买其他的课程我是拒绝的，因为我怎么知道别的老师的课程有黄老师讲解的那么全面，深度，有设计呢。不能你慕课网推荐我，我就买。买了不好观众会骂，根本没讲清楚嘛。但是dell老师确实超出了我的想象，他是那种能从第一性原理出发帮初学者理清概念的人，就是说很多高阶层的人不再能在低阶层从0开始推导，他们往往跳跃，这需要一种能力和一种爱心。希望dell老师尽快更新。">
+							哎，我是黄老师的金刚粉丝，本来购买其他的课程我是拒绝的，因为我怎么知道别的老师的课程有黄老师讲解的那么全面，深度，有设计呢。不能你慕课网推荐我，我就买。买了不好观众会骂，根本没讲清楚嘛。但是dell老师确实超出了我的想象，他是那种能从第一性原理出发帮初学者理清概念的人，就是说很多高阶层的人不再能在低阶层从0开始推导，他们往往跳跃，这需要一种能力和一种爱心。希望dell老师尽快更新。
+						</p>
+					</li>
+				</ul>
+				<a href="/class/evaluation/316.html#Anchor" class="more">查看全部<span>37</span>条用户评价</a>
+			</div>
+		</div>
+
+
+
+		<div class="preconsultation" id="Prchor">
+			<div class="w question-input">
+				<input type="text" placeholder="输入你的课程咨询问题" class="input-block js-inputcont" data-can-search="true"
+					data-pagesize="6">
+				<div class="question-btn js-question-btn" data-cid="316">提问</div>
+			</div>
+			<div class="w question-contain js-load-prelist" data-cid="316">
+				<div class="comp-loading">
+					<i class="sz-loading"></i>
+					<span class="text">数据加载中...</span>
+				</div>
+			</div>
+		</div>
+
+
+		<div class="w shizhan-recommendcourse js-recom-course" data-id="316">
+
+		</div>
+
+
+		<div class="w info-recommendcourse js-prelearn" data-id="316">
+		</div>
+
+
+	</div>
+
+
+
+
+	<div id="footer">
+		<div class="waper">
+			<div class="footerwaper clearfix">
+				<div class="followus r">
+					<a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+						<div class="flw-weixin-box"></div>
+					</a>
+					<a class="followus-weibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+					<a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank"
+						title="QQ空间"></a>
+				</div>
+				<div class="footer_intro l">
+					<div class="footer_link">
+						<ul>
+							<li><a href="//www.imooc.com/" target="_blank">网站首页</a></li>
+							<li><a href="//www.imooc.com/index/companytrain" target="_blank" title="企业合作">企业合作</a></li>
+							<li><a href="//www.imooc.com/about/job" target="_blank">人才招聘</a></li>
+							<li> <a href="//www.imooc.com/about/contact" target="_blank">联系我们</a></li>
+							<li> <a href="//www.imooc.com/about/recruit" target="_blank">讲师招募</a></li>
+							<li> <a href="//www.imooc.com/help/cate/19" target="_blank">帮助中心</a></li>
+							<li> <a href="//www.imooc.com/user/feedback?coding" target="_blank">意见反馈</a></li>
+							<li><a href="http://daxue.imooc.com/" target="_blank">慕课大学</a></li>
+							<li><a href="//git.imooc.com" target="_blank">代码托管</a></li>
+							<li> <a href="//www.imooc.com/about/friendly" target="_blank">友情链接</a></li>
+							<!-- <li><a href="http://www.imooc.com/about/us" target="_blank">关于我们</a></li> -->
+						</ul>
+					</div>
+					<p>Copyright © 2019 imooc.com All Rights Reserved | 京ICP备 12003892号-11</p>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div id="J_GotoTop" class="elevator">
+
+		<a href="//www.imooc.com/user/feedback?coding" class="elevator-msg" target="_blank">
+			<i class="sz-feedback"></i>
+			<span class="">意见反馈</span>
+		</a>
+		<a href="//order.imooc.com/pay/sharegoods" class="elevator-dist" target="_blank">
+			<i class=""></i>
+			<span class="">去赚学费</span>
+		</a>
+		<a href="//www.imooc.com/help/cate/19" class="elevator-faq" target="_blank">
+			<i class="sz-help_outline"></i>
+			<span class="">帮助中心</span>
+		</a>
+		<a href="//www.imooc.com/mobile/app" target="_blank" class="elevator-app">
+			<i class="sz-appdownload"></i>
+			<span class="">APP下载</span>
+			<div class="elevator-app-box"></div>
+		</a>
+		<a href="javascript:void(0)" class="elevator-weixin no-goto" id="js-elevator-weixin">
+			<i class="sz-weixigzh"></i>
+			<span class="">官方微信</span>
+			<div class="elevator-weixin-box"></div>
+		</a>
+		<a href="javascript:void(0)" class="elevator-top no-goto" style="display:none" id="backTop">
+			<i class="sz-arrow-up"></i>
+			<span class="">返回顶部</span>
+		</a>
+	</div>
+
+	<div class="comp-modal-overlay"></div>
+	<div class="modal modal-buy" id="before-buy-modal">
+		<div class="inner">
+			<div class="header">
+				<strong class="tit">购买课程</strong>
+				<a href="javascript:;" class="help">帮助？</a>
+			</div>
+			<div class="content">
+				<div class="infos">
+					<span class="name">从基础到实战 手把手带你掌握新版Webpack4.0</span>
+					<span class="price">
+						<i>&yen;</i><b>299</b><i>.00</i>
+					</span>
+					<span class="deadline">
+
+					</span>
+				</div>
+			</div>
+			<div class="footer">
+				<a href="javascript:;" class="cancel-btn" rel="modal:close">取消</a>
+				<a data-href="/pay/buynow/cid/316" href="javascript:;" class="go-pay-btn">去支付</a>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-dist-share" id="modal-dist-share">
+		<div class="inner">
+			<div class="content">
+				<div class="dist-share-box bdsharebuttonbox " data-bd-bind="1439263858135">
+					<p class="share-msg">邀请好友学习，每邀请一位你将得 <span>¥29.90</span><br>好友也会得 <span>¥44.85</span></p>
+					<div class="share-box">
+						<a href="javascript:void(0);" class="link imv2-link share dist-share-btn js-copy-dist"
+							title="复制"></a>
+						<a href="javascript:void(0);" class="share wx js-share sz-weixin dist-share-btn js-show-fenxiao"
+							title="分享到微信">
+						</a>
+						<a href="javascript:void(0);" class="share qq js-share sz-qq dist-share-btn" data-cmd="qzone"
+							title="分享到QQ空间">
+						</a>
+						<a href="javascript:void(0);" class="share sina js-share sz-weibo dist-share-btn"
+							data-cmd="tsina" title="分享到新浪微博">
+						</a>
+						<a href="javascript:void(0);" data-id="316"
+							class="share poster js-poster sz-image dist-share-btn" title="海报"></a>
+					</div>
+					<div class="dist-more"><a href="https://order.imooc.com/pay/sharegoods" target="_blank"
+							class="share">更多分享赚学费 >></a></div>
+					<div class="close-dist-share imv2-close js-close-distShare"></div>
+					<input type="hidden" class="dist-copy-content" value="">
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="modal modal-dist-poster" id="modal-dist-poster">
+		<div class="content">
+			<h3>分享赚¥29.90元</h3>
+			<span class="sz-close-h js-close-poster"></span>
+			<input type="hidden" class="js-short-url" value="">
+			<div class="poster-content" id="canvas-contnet">
+				<div class="poster-content-1">
+					<img class="poster-logo" src="../static/img/course/logo_new.png" alt="">
+					<div class="user-info js-poster-avator">
+						<img class="header-img" />
+						<p class="nickname js-header-nickname"></p>
+						<p>向您推荐，下单即返44.85元</p>
+					</div>
+					<div class="course-desc-box">
+						<dl>
+							<dt>从基础到实战 手把手带你掌握新版Webpack4.0</dt>
+							<dd><i></i><span>从入门到进阶，全面系统学习Webpack</span></dd>
+							<dd><i></i><span>4步讲解：基础+核心+进阶+原理分析</span></dd>
+							<dd><i></i><span>真实场景还原，在实战中掌握Webpack 使用技巧</span></dd>
+							<dd><i></i><span>循序渐进，高效完成项目配置 达到百度T4水准</span></dd>
+							<dd></dd>
+						</dl>
+					</div>
+					<div class="course-info-bar">
+						<div class="course-price">
+							<h3>￥299.00</h3>
+							<div class="bar-top">
+								<span>中级难度</span>
+								<span class="itline">/</span>
+								<span>846 人在学</span>
+							</div>
+						</div>
+						<div class="course-short-qrode">
+							<div id="qrcode" class="two-code"></div>
+							<p>扫码学习</p>
+						</div>
+					</div>
+				</div>
+			</div>
+			<div class="canvas-img-content" id="canvas-image">
+			</div>
+			<p class="friend-tips">如无法下载使用图片另存为</p>
+			<span class="js-down-poster">下载海报</span>
+		</div>
+	</div>
+
+</body>
+
+</html>

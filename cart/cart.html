@@ -1,0 +1,325 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<meta charset="utf-8">
+		<title>购物车_慕课网</title>
+		<meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+		<link rel="stylesheet" href="../static/lib/moco/css/moco.min.css" type="text/css" />
+		<link rel="stylesheet" href="../static/css/cart/cart.css">
+    </style>
+
+		<script type="text/javascript">
+			var OP_CONFIG = {
+				"module": "pay",
+				"page": "cart",
+				"userout": 0,
+				"userInfo": {
+					"uid": 7613182
+				}
+			};
+			OP_CONFIG.isLogin = 1;
+			var _msg_unread = 0;
+			var _not_unread = 0;
+			var _cart_num = 0;
+			var requirejsTimestamp = "v=201903151540";
+		</script>
+
+		<!-- <link rel="stylesheet" href="/static/module/??common/css/common-less.css?v=2.0,pay/common/css/common-less.css,pay/cart/css/index-less.css?v=1551412519" type="text/css" /> -->
+	
+	</head>
+
+	<body>
+
+		<div id="header">
+			<div class="page-container new-header" id="nav">
+				<ul class="nav-item">
+					<li><a href="//www.imooc.com" target="_self" class="imooc">慕课网首页</a></li>
+					<li><a href="//www.imooc.com/course/list" target="_self">免费课程</a></li>
+					<li><a href="//coding.imooc.com" target="_self">实战课程</a></li>
+					<li><a href="//class.imooc.com" target="_self">就业班</a></li>
+					<li class="search" id="common-nav-search">
+						<a href="javascript:void(0);">
+							<i class="imv2-search"></i>
+						</a>
+					</li>
+					<li class="input-search hide" id="common-input-search">
+						<div class="input-box">
+							<input type="text" class="nav-search-input" autocomplete="off">
+							<a href="javascript:void(0);" class="nav-searchBtn js-nav-searchBtn">
+								<i class="imv2-search"></i>
+							</a>
+						</div>
+						<div class="nav-search-box hide">
+							<div class="hot">
+								<h2>热搜</h2>
+								<div class="hot-box"></div>
+							</div>
+							<div class="history hide">
+								<h2>最近搜索<a href="javascript:void(0);" class="history-clear js-clear-history">清空</a></h2>
+								<div class="history-box"></div>
+							</div>
+						</div>
+						<div class="nav-correlate-box hide">
+							<div class="correlate"></div>
+						</div>
+					</li>
+				</ul>
+				<div class="header-right clearfix">
+					<div class="app-download" id="js-app-load">
+						<a href="//www.imooc.com/mobile/app" target="_blank">下载APP</a>
+						<div class="app-load-box clearfix js-load-box">
+							<div class="browser-load-box">
+								<h4>慕课网浏览器 - PC客户端</h4>
+								<a class="app-load-btn" href="//www.imooc.com/mobile/app" target="_blank"><i class="imv2-windows"></i>Windows版</a>
+								<span class="browser-load-mac">Mac版开发中，敬请期待…</span>
+							</div>
+							<div class="mobile-load-box">
+								<h4>慕课网APP - 随时随地学编程</h4>
+								<img src="//www.imooc.com/static/img/common/appload.png" class="l">
+								<div class="r">
+									<a class="app-load-btn" href="https://itunes.apple.com/cn/app/mu-ke-wang/id722179140?mt=8" target="_blank"><i
+										 class="icon-apple"></i>App Store下载</a>
+									<a class="app-load-btn" href="//www.imooc.com/mobile/appdown" target="_blank"><i class="icon-android"></i>Android下载</a>
+									<p>扫描下载慕课网APP</p>
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="shop-cart" id="shop-cart">
+						<a href="//order.imooc.com/pay/cart" class="shop-cart-icon" target="_blank">
+							<span class="imv2-cart js-endcart"></span><span>购物车</span><span class="shopping_icon js-cart-num" data-ordernum="0"
+							 data-cartnum="0" data-prevnum="0" style="display: none">0</span>
+						</a>
+						<div class="my-cart" id="js-my-cart"></div>
+					</div>
+					<div id="login-area">
+						<ul class="clearfix logined">
+							<li class="remind_warp">
+								<i class="msg_remind"></i>
+								<a target="_blank" href="//www.imooc.com/u/7613182/notices">
+									<i class="imv2-notifications"></i>
+								</a>
+							</li>
+							<li class="user-card-box" id="header-user-card">
+								<a id="header-avator" class="user-card-item js-header-avator" action-type="my_menu" href="//www.imooc.com/u/index"
+								 target="_self">
+									<img width="40" height="40">
+									<i class="myspace_remind" style="display: none;"></i>
+									<span style="display: none;">动态提醒</span>
+								</a>
+								<div class="g-user-card"></div>
+							</li>
+						</ul>
+					</div>
+				</div>
+			</div>
+		</div>
+
+		<div class="body-main">
+
+
+			<div class="cart-header">
+				<div class="cart-header-warp clearfix">
+					<div class="cart-title left clearfix">
+						<h1 class="left">我的购物车</h1>
+
+						<div class="left js-number-box-cart">
+							共<span class="js-coures-num">0</span>门，已选择<span class="js-choice-num">0</span>门
+						</div>
+
+					</div>
+					<div class="right">
+
+						<div class="clearfix">
+							<span class="left"><a class="js-myorderbtn  myorder-history" href="/myorder">我的订单历史</a></span>
+							<span class="left num js-order-num" style="display: none;">0</span>
+						</div>
+
+					</div>
+				</div>
+			</div>
+
+
+			<div class="cart-body" id="cartBody">
+				<div class="cart-body-title clearfix">
+					<div class="item-1 l">
+						<i class="imv2-checkbox_onk js-check-all check"></i>
+						<span class="c-93999f">全选</span>
+					</div>
+
+					<div class="item-2 l">
+						<span class="c-4d555d">课程</span>
+
+					</div>
+
+					<div class="item-3 l">
+						<span class="c-4d555d">金额</span>
+					</div>
+
+					<div class="item-4 l">
+						<span class="c-4d555d">操作</span>
+					</div>
+				</div>
+				<textarea class="storageCart" style="display:none">
+		[
+					{"goods_id":"1320","type":"1","type_id":"303","status":"1","price":"299.00","ios_price":"299.00","service_lifetime":0,"open_discount":"1","discount_start_time":"1545753600","discount_end_time":"1551369300","discount_price":"0.00","discount_type":"3","dist_ratio":"10","buy_dist_ratio":"15","code_white_list":9999,"using_discount":false,"fullreduce_id":"29","fullreduce_title":"","fullreduce_satisfymoney":"0.00","fullreduce_discountmoney":"0.00","bargain_id":0,"bargain_price":0,"pay_price":"299.00","pay_price_ios":"299.00","code":0,"fullreduce":{"type":1,"reduce":{"399":"30","599":"80"},"st":"1552752000","et":"1554047999"}}
+			,
+					{"goods_id":"1438","type":"1","type_id":"324","status":"1","price":"288.00","ios_price":"288.00","service_lifetime":0,"open_discount":"1","discount_start_time":"1553011200","discount_end_time":"1554307199","discount_price":"255.00","discount_type":"1","dist_ratio":"13","buy_dist_ratio":"0","code_white_list":9999,"using_discount":true,"fullreduce_id":0,"fullreduce_title":"","fullreduce_satisfymoney":0,"fullreduce_discountmoney":0,"bargain_id":0,"bargain_price":0,"pay_price":"255.00","pay_price_ios":"288.00","code":0}
+			
+				]
+	</textarea>
+				<div id="js-cart-body-table" class="cart-body-table">
+
+
+
+					<div>
+						<div class="title">
+							<div class="title-icon">减</div>
+							<div class="title-content">
+								<span>满399减30</span>
+								<span>满599减80</span>
+							</div>
+						</div>
+						<div class="item clearfix js-item-cart js-each-303" data-type="1" data-typeid="303" data-goodsid="1320"
+						 data-price="299.00">
+							<div class="item-1 stair">
+								<i class="js-check imv2-checkbox_onk check" data-price="299.00"></i>
+							</div>
+							<div class="item-2 clearfix">
+								<a href="//coding.imooc.com/class/303.html" target="_blank" class="img-box l">
+									<img src="//szimg.mukewang.com/5c18d2d8000141c506000338-160-90.jpg" width="160" height="90" />
+								</a>
+								<dl class="l has-package">
+									<a href="//coding.imooc.com/class/303.html" target="_blank"><dt></dt></a>
+									<!-- 组合套餐 -->
+									<p class="package-item js-package-item" data-cid="303"></p>
+								</dl>
+							</div>
+
+							<div class="item-3">
+								<div class="price clearfix">
+									<em>￥</em>
+									<span>299.00</span>
+								</div>
+
+								<a href="//www.imooc.com/help/detail/138" target="_blank" class="moneyoff-info">
+									满减<i class="imv2-arrow1_d"></i>
+									<ul class="fullreduce-desc">
+										<li>· 满399减30</li>
+										<li>· 满599减80</li>
+										<li class="validity-date">有效期：2019.03.17 - 2019.03.31</li>
+									</ul>
+								</a>
+							</div>
+
+							<div class="item-4">
+								<i class="imv2-close js-close-cart close"></i>
+							</div>
+						</div>
+					</div>
+
+					<div id="Anchor"></div>
+					<div class="cart-body-bot js-cart-body-bot">
+						<div class="clearfix cart-body-bot-box">
+
+
+							<div class="right">
+								<ul class="clearfix">
+									<li class="li-2">
+										<div class="topdiv">总计金额：</div>
+										<div class="price price-red clearfix">
+											<em>￥</em>
+											<span class="jsAltogether">0</span>
+										</div>
+									</li>
+
+									<li class="li-3">
+										<span class="btn js-go-confrim">去结算</span>
+									</li>
+								</ul>
+							</div>
+						</div>
+					</div>
+				</div>
+			</div>
+			<!-- 遮罩 -->
+			<div class="block-package js-block-package"></div>
+			<!-- loading -->
+			<div class="loading">
+				<div class="bounce1"></div>
+				<div class="bounce2"></div>
+				<div class="bounce3"></div>
+			</div>
+			<!-- 遮罩 end-->
+
+
+
+
+
+		</div>
+
+
+		<div id="footer">
+			<div class="waper">
+				<div class="footerwaper clearfix">
+					<div class="followus r">
+						<a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+							<div class="flw-weixin-box"></div>
+						</a>
+						<a class="followus-weibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+						<a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank" title="QQ空间"></a>
+					</div>
+					<div class="footer_intro l">
+						<div class="footer_link">
+							<ul>
+								<li><a href="//www.imooc.com/" target="_blank">网站首页</a></li>
+								<li><a href="//www.imooc.com/about/cooperate" target="_blank" title="企业合作">企业合作</a></li>
+								<li><a href="//www.imooc.com/about/job" target="_blank">人才招聘</a></li>
+								<li> <a href="//www.imooc.com/about/contact" target="_blank">联系我们</a></li>
+								<li> <a href="//www.imooc.com/about/recruit" target="_blank">讲师招募</a></li>
+								<li> <a href="//www.imooc.com/help" target="_blank">帮助中心</a></li>
+								<li> <a href="//www.imooc.com/user/feedback?order" target="_blank">意见反馈</a></li>
+								<li><a href="http://daxue.imooc.com/" target="_blank">慕课大学</a></li>
+								<li><a href="//git.imooc.com" target="_blank">代码托管</a></li>
+								<li> <a href="//www.imooc.com/about/friendly" target="_blank">友情链接</a></li>
+							</ul>
+						</div>
+						<p>Copyright © 2019 imooc.com All Rights Reserved | 京ICP备 12003892号-11</p>
+					</div>
+				</div>
+			</div>
+		</div>
+		<div class="lottery">
+			<a href="//www.imooc.com/act/szjsys2019#jslottery" class="elevator-lottery" target="_blank">
+			</a>
+		</div>
+		<div id="J_GotoTop" class="elevator">
+			<a href="//www.imooc.com/user/feedback?order" class="elevator-msg" target="_blank">
+				<i class="imv2-feedback"></i>
+				<span class="">意见反馈</span>
+			</a>
+			<a href="//order.imooc.com/pay/sharegoods" class="elevator-dist" target="_blank">
+				<i class=""></i>
+				<span class="">去赚学费</span>
+			</a>
+			<a href="//www.imooc.com/help" class="elevator-faq" target="_blank">
+				<i class="imv2-help_outline"></i>
+				<span class="">帮助中心</span>
+			</a>
+			<a href="//www.imooc.com/mobile/app" target="_blank" class="elevator-app">
+				<i class="imv2-appdownload"></i>
+				<span class="">APP下载</span>
+				<div class="elevator-app-box"></div>
+			</a>
+			<a href="javascript:void(0)" class="elevator-weixin no-goto" id="js-elevator-weixin">
+				<i class="imv2-weixigzh"></i>
+				<span class="">官方微信</span>
+				<div class="elevator-weixin-box"></div>
+			</a>
+			<a href="javascript:void(0)" class="elevator-top no-goto" style="display:none" id="backTop">
+				<i class="imv2-arrow2_u"></i>
+				<span class="">返回顶部</span>
+			</a>
+		</div>
+	</body>
+</html>

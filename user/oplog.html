@@ -1,0 +1,376 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <title>慕课网</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge, chrome=1">
+    <meta name="renderer" content="webkit" />
+
+    <link rel="stylesheet" href="../static/css/base.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/common/common-less-t=2.5.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/user/settings/common-less.css" type="text/css" />
+    <link rel="stylesheet" href="../static/css/user/settings/oplog-less.css" />
+    <link rel="stylesheet" href="../static/lib/moco/css/moco.min.css" type="text/css" />
+    <link rel="stylesheet" href="../static/lib/swiper/swiper-3.4.2.min-t=201903261132.css">
+
+    <script type="text/javascript">
+        var OP_CONFIG = {
+            "module": "user",
+            "page": "oplog",
+            "userInfo": {
+                "uid": 4827770,
+                "uidaes": "_2zJvdOg2us,"
+            }
+        };
+        var isLogin = 1;
+        var is_choice = "";
+        var seajsTimestamp = "v=201903011631";
+        var _msg_unread = 0;
+        var _not_unread = 0;
+        var _cart_num = 0;
+    </script>
+
+    <script type="text/javascript">
+        var weixin_sid = '',
+            qq_sid = '24B72C442C234820DC2F187AE360FD8C',
+            avator_img = '589ad3dc0001252e01000100',
+            weibo_sid = '';
+    </script>
+
+</head>
+
+<body>
+    <!-- 窄条导航 -->
+    <div id="new_header">
+        <div class="page-container new-header clearfix" id="nav">
+            <ul class="nav-item">
+                <li><a href="../index.html" target="_self" class="imooc">慕课网首页</a></li>
+                <li><a href="../course/list.html" target="_self">免费课程</a></li>
+                <li><a href="//coding.imooc.com" target="_self">实战课程</a></li>
+                <li><a href="//class.imooc.com" class="" target="_self">就业班</a></li>
+                <li class="search" id="common-nav-search">
+                    <a href="javascript:void(0);">
+                        <i class="imv2-search"></i>
+                    </a>
+                </li>
+                <li class="input-search hide" id="common-input-search">
+                    <div class="input-box">
+                        <input type="text" class="nav-search-input" autocomplete="off">
+                        <a href="javascript:void(0);" class="nav-searchBtn js-nav-searchBtn">
+                            <i class="imv2-search"></i>
+                        </a>
+                    </div>
+                    <div class="nav-search-box hide">
+                        <div class="hot">
+                            <h2>热搜</h2>
+                            <div class="hot-box">
+                            </div>
+                        </div>
+                        <div class="history hide">
+                            <h2>最近搜索<a href="javascript:void(0);" class="history-clear js-clear-history">清空</a></h2>
+                            <div class="history-box">
+                            </div>
+                        </div>
+                    </div>
+                    <div class="nav-correlate-box hide">
+                        <div class="correlate">
+                        </div>
+                    </div>
+                </li>
+            </ul>
+            <div class="header-right clearfix">
+                <div class="dist-money">
+                    <a href="//order.imooc.com/pay/sharegoods" target="_blank">
+                        <div class="redPacket"></div>分享赚学费
+                    </a>
+                </div>
+                <div class="app-download" id="js-app-load">
+                    <a href="../mobile/app.html" target="_blank" style="width:60px;">下载APP</a>
+                    <div class="app-load-box clearfix js-load-box">
+                        <div class="browser-load-box">
+                            <h4>慕课网浏览器 - PC客户端</h4>
+                            <a class="app-load-btn" href="../mobile/app.html"><i class="imv2-windows"></i>Windows版</a>
+                            <span class="browser-load-mac">Mac版开发中，敬请期待…</span>
+                        </div>
+                        <div class="mobile-load-box">
+                            <h4>慕课网APP - 随时随地学编程</h4>
+                            <img src="../static/img/common/appload.png" class="l">
+                            <div class="r">
+                                <a class="app-load-btn"
+                                    href="https://itunes.apple.com/cn/app/mu-ke-wang/id722179140?mt=8"
+                                    target="_blank"><i class="icon-apple"></i>App Store下载</a>
+                                <a class="app-load-btn" href="https://www.imooc.com/mobile/appdown" target="_blank"><i
+                                        class="icon-android"></i>Android下载</a>
+                                <p>扫描下载慕课网APP</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="shop-cart" id="shop-cart">
+                    <a href="//order.imooc.com/pay/cart" class="shop-cart-icon" target="_blank">
+                        <span class="imv2-cart js-endcart"></span><span>购物车</span><span
+                            class="shopping_icon js-cart-num" data-ordernum="0" data-cartnum="0"
+                            style="display: none">0</span>
+                    </a>
+                    <div class="my-cart" id="js-my-cart"></div>
+                </div>
+                <div id="login-area">
+                    <ul class="clearfix logined">
+                        <li class="remind_warp">
+                            <i class="msg_remind"></i>
+                            <a target="_blank" href="../u/4827770/notices.html">
+                                <i class="imv2-notifications"></i>
+                            </a>
+                        </li>
+                        <li class="user-card-box" id="header-user-card">
+                            <a id="header-avator" class="user-card-item js-header-avator" action-type="my_menu"
+                                href="../u/index.html" target="_self">
+                                <img width="40" height="40">
+                                <i class="myspace_remind" style="display: none;"></i>
+                                <span style="display: none;">动态提醒</span>
+                            </a>
+                            <div class="g-user-card"></div>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div class="bindHintBox js-bindHintBox hide">
+        <div class="pr">
+            为了账号安全，请及时绑定邮箱和手机<a href="setbindsns.html" class="ml20 color-red" target="_blank">立即绑定</a>
+            <button class="closeBindHint js-closeBindHint" type="button"></button>
+            <div class="arrow"> </div>
+        </div>
+    </div>
+
+
+    <div id="main">
+
+        <div class="settings-cont clearfix">
+            <div class="setting-left l">
+                <div class="avator-wapper">
+                    <div class="avator-mode">
+                        <img class="avator-img" src="//img.mukewang.com/589ad3dc0001252e01000100-200-200.jpg"
+                            data-portrait="589ad3dc0001252e01000100" width="92" height="92">
+                        <div class="update-avator">
+                            <p><a href="javascript:void(0);" class="js-avator-link">更换头像</a></p>
+                        </div>
+                    </div>
+                    <div class="des-mode">
+                        <p>孤城落寞</p>
+                        <span>ID: 4827770</span>
+                        <dl class="js-auth-list clearfix auth-list">
+                            <dd><i class="icon-set_sns"></i>
+                                <div class="icon-tips hide">
+                                    <div class="triangle_border_up"><span></span></div>还未实名认证
+                                </div>
+                            </dd>
+
+                            <dd><i class="imv2-school"></i>
+                                <div class="icon-tips hide">
+                                    <div class="triangle_border_up"><span></span></div>还未学籍认证
+                                </div>
+                            </dd>
+
+                            <dd class="active"><i class="icon-set_phone"></i>
+                                <div class="icon-tips hide">
+                                    <div class="triangle_border_up"><span></span></div>你已绑定手机
+                                </div>
+                            </dd>
+                            <dd><i class="icon-set_email"></i>
+                                <div class="icon-tips hide">
+                                    <div class="triangle_border_up"><span></span></div>还未绑定邮箱
+                                </div>
+                            </dd>
+                        </dl>
+                    </div>
+                </div>
+                <iframe src="about:blank" id="uploadtarget" name="uploadtarget" frameborder="0"
+                    style="display:none;"></iframe>
+                <div class="list-wapper">
+                    <h2>账户管理</h2>
+                    <div class="line"></div>
+                    <ul class="menu">
+                        <li><a href="setbindsns.html">账号绑定<span class="arr"><i class="icon-right2"></i></span></a></li>
+                        <li><a href="setprofile.html">个人信息<span class="arr"><i class="icon-right2"></i></span></a></li>
+                        <li><a href="oplog.html" class="on">操作记录<span class="arr"><i class="icon-right2"></i></span></a>
+                        </li>
+                        <li><a href="authenticate.html">实名认证<span class="arr"><i class="icon-right2"></i></span></a>
+                        </li>
+                        <li><a href="certificate.html">学籍认证<span class="arr"><i class="icon-right2"></i></span></a></li>
+                        <li><a href="address.html">收件地址<span class="arr"><i class="icon-right2"></i></span></a></li>
+                    </ul>
+                </div>
+            </div>
+            <div class="setting-right">
+                <div class="setting-right-wrap wrap-boxes settings">
+
+                    <div class="page-settings">
+                        <div class="common-title">
+                            操作记录<span class="title-tips">通过查看操作类型、登录时间、登录地点和设备可以判断账号是否正常</span>
+                            <a href="javascript:void(0)" class="pull-right js-update-psw">不是我登录的？</a>
+                        </div>
+                        <div class="line"></div>
+                        <div class="setting setting-height paddingBtoom">
+                            <div class="contentBox">
+                                <table class="oplog-list">
+                                    <tr>
+                                        <th>类型</th>
+                                        <th>登录时间</th>
+                                        <th>城市</th>
+                                        <th>IP</th>
+                                        <th>登录设备</th>
+                                    </tr>
+                                    <tr>
+                                        <td>账号登录</td>
+                                        <td>2019.03.05 09:34</td>
+                                        <td>河南省新乡市 联通</td>
+                                        <td>218.29.60.105</td>
+                                        <td>web</td>
+                                    </tr>
+                                    <tr>
+                                        <td>账号登录</td>
+                                        <td>2019.03.03 17:24</td>
+                                        <td>浙江省 电信</td>
+                                        <td>36.23.107.173</td>
+                                        <td>web</td>
+                                    </tr>
+                                    <tr>
+                                        <td>账号登录</td>
+                                        <td>2018.12.16 16:15</td>
+                                        <td>河南省新乡市 联通</td>
+                                        <td>218.29.60.105</td>
+                                        <td>web</td>
+                                    </tr>
+                                    <tr>
+                                        <td>账号登录</td>
+                                        <td>2018.07.01 13:44</td>
+                                        <td>河南省新乡市 移动</td>
+                                        <td>223.91.194.57</td>
+                                        <td>web</td>
+                                    </tr>
+                                    <tr>
+                                        <td>账号登录</td>
+                                        <td>2018.07.01 13:43</td>
+                                        <td>河南省新乡市 移动</td>
+                                        <td>223.91.194.57</td>
+                                        <td>web</td>
+                                    </tr>
+                                    <tr>
+                                        <td>账号登录</td>
+                                        <td>2018.07.01 13:38</td>
+                                        <td>河南省新乡市 移动</td>
+                                        <td>223.91.194.57</td>
+                                        <td>web</td>
+                                    </tr>
+                                    <tr>
+                                        <td>账号登录</td>
+                                        <td>2018.06.28 11:05</td>
+                                        <td>河南省新乡市 联通</td>
+                                        <td>218.29.60.105</td>
+                                        <td>web</td>
+                                    </tr>
+                                    <tr>
+                                        <td>账号登录</td>
+                                        <td>2018.05.19 16:43</td>
+                                        <td>河南省新乡市 联通</td>
+                                        <td>218.29.60.105</td>
+                                        <td>web</td>
+                                    </tr>
+                                    <tr>
+                                        <td>账号登录</td>
+                                        <td>2018.05.01 22:13</td>
+                                        <td>河南省新乡市 联通</td>
+                                        <td>218.29.60.105</td>
+                                        <td>web</td>
+                                    </tr>
+                                    <tr>
+                                        <td>账号登录</td>
+                                        <td>2018.04.30 21:55</td>
+                                        <td>河南省新乡市 联通</td>
+                                        <td>218.29.60.105</td>
+                                        <td>web</td>
+                                    </tr>
+                                </table>
+                            </div>
+                            <div class="page"><span class="disabled_page">首页</span><span
+                                    class="disabled_page">上一页</span><a href="javascript:void(0)"
+                                    class="active text-page-tag">1</a><a class="text-page-tag"
+                                    href="https://www.imooc.com/user/oplog?page=2">2</a><a
+                                    href="https://www.imooc.com/user/oplog?page=2">下一页</a><a
+                                    href="https://www.imooc.com/user/oplog?page=2">尾页</a></div>
+                        </div>
+                    </div>
+
+                </div>
+            </div>
+        </div>
+
+    </div>
+
+    <div id="footer" data="user,oplog">
+        <div class="waper">
+            <div class="footerwaper clearfix">
+                <div class="followus r">
+                    <a class="followus-weixin" href="javascript:;" target="_blank" title="微信">
+                        <div class="flw-weixin-box"></div>
+                    </a>
+                    <a class="followus-weibo" href="http://weibo.com/u/3306361973" target="_blank" title="新浪微博"></a>
+                    <a class="followus-qzone" href="http://user.qzone.qq.com/1059809142/" target="_blank"
+                        title="QQ空间"></a>
+                </div>
+                <div class="footer_intro l">
+                    <div class="footer_link">
+                        <ul>
+                            <li><a href="../index.html" target="_blank">网站首页</a></li>
+                            <li><a href="../index/companytrain.html" target="_blank" title="企业合作">企业合作</a></li>
+                            <li><a href="../about/job.html" target="_blank">人才招聘</a></li>
+                            <li> <a href="../about/contact.html" target="_blank">联系我们</a></li>
+                            <li> <a href="../about/recruit.html" target="_blank">讲师招募</a></li>
+                            <li> <a href="../help.html" target="_blank">帮助中心</a></li>
+                            <li> <a href="feedback.html" target="_blank">意见反馈</a></li>
+                            <li><a href="http://daxue.imooc.com/" target="_blank">慕课大学</a></li>
+                            <li><a href="https://git.imooc.com" target="_blank">代码托管</a></li>
+                            <li> <a href="../about/friendly.html" target="_blank">友情链接</a></li>
+                        </ul>
+                    </div>
+                    <p>Copyright © 2019 imooc.com All Rights Reserved | 京ICP备 12003892号-11 </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <div id="J_GotoTop" class="elevator">
+        <a href="feedback.html" class="elevator-msg" target="_blank">
+            <i class="icon-feedback"></i>
+            <span class="">意见反馈</span>
+        </a>
+        <a href="//order.imooc.com/pay/sharegoods" class="elevator-dist" target="_blank">
+            <i class=""></i>
+            <span class="">去赚学费</span>
+        </a>
+        <a href="../help.html" class="elevator-faq" target="_blank">
+            <i class="icon-ques"></i>
+            <span class="">帮助中心</span>
+        </a>
+        <a href="../mobile/app.html" target="_blank" class="elevator-app">
+            <i class="icon-appdownload"></i>
+            <span class="">APP下载</span>
+            <div class="elevator-app-box"></div>
+        </a>
+        <a href="javascript:void(0)" class="elevator-weixin no-goto" id="js-elevator-weixin">
+            <i class="icon-wxgzh"></i>
+            <span class="">官方微信</span>
+            <div class="elevator-weixin-box"></div>
+        </a>
+        <a href="javascript:void(0)" class="elevator-top no-goto" style="display:none" id="backTop">
+            <i class="icon-up2"></i>
+            <span class="">返回顶部</span>
+        </a>
+    </div>
+</body>
+
+</html>
